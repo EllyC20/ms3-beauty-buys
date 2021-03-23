@@ -1,45 +1,86 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Beauty Buys
 
-Welcome USER_NAME,
+Am I Responsive Image Here
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Beauty Buys is a review site, where users can upload their own reviews of beauty products. Due to Covid-19 many people have had to tighten
+their purses, and pay closer attention to where their money is going. By having a site where users can read about products before purchasing
+ensures money is not wasted on unsuitable products. The aim is that a community of people with a common interest will be developed and 
+people can have fun learning and reviewing.
 
-## Gitpod Reminders
+The Deployed Live Site Link Here 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<br>
 
-`python3 -m http.server`
+## Table Of Contents 
 
-A blue button should appear to click: *Make Public*,
+Table Of Contents Here.
 
-Another blue button should appear to click: *Open Browser*.
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## UX 
 
-A blue button should appear to click: *Make Public*,
+### User Stories 
 
-Another blue button should appear to click: *Open Browser*.
+**As a User**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* I want to have the functionality to register an account.
+* I want to be able to upload a review for different product categories. 
+* I want to be able to read reviews left by other users.
+* I want to be able to delete or edit a review I have made. 
+* I don't want other users to be able to edit or delete a review I have made.
+* I want to be able to search for particular products.
 
-## Updates Since The Instructional Video
+**As a Site Owner**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* I want to provide a way for users to register an account.
+* I want the users to have an easy and clear way of submitting a product review. 
+* I want to provide a functionality where users can provide an optional link to the product being reviewed. This could help me build affiliate
+  deals with brands.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+**As a Returning User**
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* I want to be able to easily sign into my account. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### 1.Strategy 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+**Project Purpose**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### 2.Scope
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### 3.Structure
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### 4.Skeleton
 
---------
+Provide Individual Links To All Wireframes Here.
 
-Happy coding!
+### 5.Surface
+
+<br>
+
+## Features 
+
+### Current Features 
+
+### Feautures To Be Implemented
+
+<br>
+
+## Languages Used 
+
+## Frameworks And Libaries Used 
+
+<br>
+
+## Testing 
+
+## Deployment 
+
+<br>
+
+## Credits 
+
+### Content 
+
+### Media
+
+### Acknowledgements
