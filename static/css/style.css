@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 /* Navbar */
 nav {
     background-color: #ddbea9;
 }
 
 nav ul a {
-    color: #3f4238;
+    color: #081c15;
 }
 
 nav ul a:hover {
@@ -15,6 +18,8 @@ nav ul a:hover {
 nav .brand-logo {
     color: #000000;
     text-decoration: none;
+    font-family: 'Kiwi Maru', serif;
+    padding-left: 15px;
 }
 
 nav a {
@@ -23,4 +28,41 @@ nav a {
 
 nav a:hover {
     color: #000000;
+}
+
+/* To ensure brand logo doesn't break out of alignment on smaller screen sizes */ 
+@media screen and (min-width:200px) and (max-width:375px){
+  nav .brand-logo { 
+      font-size: 22px;
+      padding-left: 0px;
+    }
+}
+
+
+/* Footer */
+/* Creates sticky footer. CREDIT: https://materializecss.com/footer.html */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+/* End credit */ 
+
+footer {
+    background-color: #ddbea9 ;
+}
+
+.fab {
+    color: #081c15;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.fab:hover {
+    text-decoration: underline;
 }
