@@ -72,6 +72,13 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/logout")
+def logout():
+    flash("You Have Signed Out")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.product_detail.find()
