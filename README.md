@@ -71,11 +71,34 @@ Provide Individual Links To All Wireframes Here.
 
 ## Languages Used 
 
-## Frameworks And Libaries Used 
+* [HTML5]()
+* [CSS3]()
+* [Python]()
+* [jQuery]()
+
+## Frameworks And Libaries & Other Tools Used 
+
+* [Gitpod]()
+* [Github]()
+* [Git]()
+* [Google Fonts]()
+* [TinyPng]()
+* [Balsamiq]()
+* [MongoDb]()
+* [Heroku]()
+* [Jinja]()
+* [Flask]()
+* [Werkzeug]()
+* [Coolors](https://coolors.co/palettes/trending)
+* [Font Awesome]()
+* [cdnjs]()
+* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 <br>
 
 ## Testing 
+
+Link to TESTINGMD here. 
 
 ## Deployment 
 
@@ -85,6 +108,9 @@ Provide Individual Links To All Wireframes Here.
 
 ### Content 
 
-### Media
+### Media 
+
+* My homepage image is from Pexel and can be found [here.](https://www.pexels.com/photo/happy-woman-removing-face-mask-after-taking-bath-3852159/)
+* The image on my register and login pages is from PngKey, which can be found [here.](https://www.pngkey.com/detail/u2e6q8o0y3w7e6t4_customer-clipart-client-happy-cartoon-image-of-people)
 
 ### Acknowledgements
