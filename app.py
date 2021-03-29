@@ -24,6 +24,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
+
+
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.product_detail.find()

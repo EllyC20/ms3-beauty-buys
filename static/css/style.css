@@ -95,3 +95,19 @@ footer {
 .carousel .indicators .indicator-item.active {
     background-color: rgba(0, 0, 0, 0.5)
 }
+
+/* Register */
+
+h3 {
+    font-family: 'Kiwi Maru', serif;
+}
+
+.btn-large {
+    background-color: #f8edeb;
+    color: #081c15;
+}
+
+.btn-large:hover {
+    background-color: #081c15;
+    color: #f8edeb;
+}
