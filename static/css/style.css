@@ -55,6 +55,7 @@ body {
 
 footer {
     background-color: #f8edeb;
+    margin-top: 15px;
 }
 
 .fab {
@@ -81,4 +82,16 @@ footer {
 .carousel .carousel-item {
     height: 360px;
     width: 360px;
+}
+
+.carousel  {
+    background-color: #f8edeb;
+}
+
+.carousel .indicators .indicator-item {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: rgba(0, 0, 0, 0.5)
 }
