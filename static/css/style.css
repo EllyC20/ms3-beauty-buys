@@ -69,7 +69,8 @@ footer {
 }
 
 /* Home Page */
-.img-container img {
+.img-container img,
+.registration-img-div img {
     height: 60%;
     width:100%;
     object-fit: cover;
@@ -98,8 +99,9 @@ footer {
 
 /* Register */
 
-h3 {
+.register-h1 {
     font-family: 'Kiwi Maru', serif;
+    font-size: 40px;
 }
 
 .btn-large {
@@ -110,4 +112,11 @@ h3 {
 .btn-large:hover {
     background-color: #081c15;
     color: #f8edeb;
+}
+
+/* To ensure text doesn't look too large on smaller devices. */ 
+@media screen and (max-width: 425px){
+  .register-h1 { 
+      font-size: 30px;
+    }
 }
