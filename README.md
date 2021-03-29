@@ -36,6 +36,7 @@ Table Of Contents Here.
 * I want the users to have an easy and clear way of submitting a product review. 
 * I want to provide a functionality where users can provide an optional link to the product being reviewed. This could help me build affiliate
   deals with brands.
+* I want to have an admin account, this will ensure I can regulate reviews and remove any inappropiate content. 
 
 **As a Returning User**
 
@@ -62,6 +63,9 @@ Provide Individual Links To All Wireframes Here.
 ### Current Features 
 
 ### Feautures To Be Implemented
+
+* In the future a feature could be added where a user could use their smartphone camera to scan a products barcode to provide product name 
+  and details quickly, then they would only need to upload a reiew. 
 
 <br>
 
