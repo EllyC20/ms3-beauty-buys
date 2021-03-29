@@ -99,7 +99,8 @@ footer {
 
 /* Register */
 
-.register-h1 {
+.register-h1,
+.base-h1 {
     font-family: 'Kiwi Maru', serif;
     font-size: 40px;
 }
