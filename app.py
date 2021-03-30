@@ -79,6 +79,11 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/new_review")
+def new_review():
+    return render_template("new_review.html")
+
+
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.product_detail.find()
