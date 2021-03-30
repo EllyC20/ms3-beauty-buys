@@ -59,7 +59,7 @@ footer {
 }
 
 .fab {
-    color: #081c15;
+    color: #ff7096;
     font-size: 20px;
     padding-left: 5px;
 }
@@ -71,7 +71,6 @@ footer {
 /* Home Page */
 .img-container img,
 .registration-img-div img {
-    height: 60%;
     width:100%;
     object-fit: cover;
 }
@@ -99,8 +98,7 @@ footer {
 
 /* Register */
 
-.register-h1,
-.base-h1 {
+h1 {
     font-family: 'Kiwi Maru', serif;
     font-size: 40px;
 }
@@ -111,13 +109,17 @@ footer {
 }
 
 .btn-large:hover {
-    background-color: #081c15;
+    background-color: #ff7096;
     color: #f8edeb;
 }
 
 /* To ensure text doesn't look too large on smaller devices. */ 
 @media screen and (max-width: 425px){
-  .register-h1 { 
+  h1 { 
       font-size: 30px;
     }
+}
+
+.helper-text {
+    font-size: 10px;
 }

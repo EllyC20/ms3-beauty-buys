@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="center-align register-h1">Welcome Back! Log In</h1>
+<h1 class="center-align register-h1">Log In</h1>
 <div class="container registration-img-div">
     <img src="/static/img/registration-img.png" alt="photo of community of people">
 </div>
+
 <form class="col s12" method="POST" action="{{ url_for('login') }}">
     <div class="card-panel">
         <!-- Username-->
