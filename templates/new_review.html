@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1 class="center-align">Add A New Review Below</h1>
+
+    <div class="row">
+        <form class="col s12 m8 offset-m2" method="POST" action="">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-question prefix"></i>
+                    <input id="product_name" name="product_name" minlength="5" maxlength="45"
+                        type="text" class="validate" required>
+                    <label for="product_name">Product Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-question prefix"></i>
+                    <textarea id="product_desc" name="product_desc" class="materialize-textarea" minlength="5" 
+                        maxlength="30" required></textarea>
+                    <label for="product_desc">Product Description</label>
+                    <p class="helper-text">Please provide a brief outline of what this product is, for example: "A daily cleanser"</p>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+
+{% endblock %}
