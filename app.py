@@ -81,7 +81,8 @@ def logout():
 
 @app.route("/new_review")
 def new_review():
-    return render_template("new_review.html")
+    categories = mongo.db.product_category.find().sort("category_name", 1)
+    return render_template("new_review.html", categories=categories)
 
 
 @app.route("/get_reviews")
