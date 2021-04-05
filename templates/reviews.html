@@ -1,11 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for review in reviews %}
-        {{ review.product_name }}<br>
-        {{ review.product_desc }}<br>
-        {{ review.review_detail }}<br>
-        {{ review.would_recommend }}<br>
-    {% endfor %}
-    
+    <h1 class="center-align">All Reviews</h1>
+        <div class="row center-align">
+            {% for review in reviews %}
+                <div class="col s12 m4 center-align">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="{{ review.url_link }}" id="review-image" alt="image of product being reviewed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">{{ review.product_name }}<i
+                                    class="material-icons right"></i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">{{ review.product_name }}<i class="material-icons right">close</i></span>
+                            <p class="center-align">
+                                Category: {{ review.category_name }}<br>
+                                Product Description: {{ review.product_desc }}<br>
+                                Review Detail: {{ review.review_detail }}<br>
+                                Created By: {{ review.created_by }}<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
 {% endblock %}

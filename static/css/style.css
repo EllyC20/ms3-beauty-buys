@@ -125,3 +125,12 @@ h1 {
 }
 
 /* New Review */
+.review-p {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.span-review {
+    font-family: 'Playfair Display', serif;
+}
