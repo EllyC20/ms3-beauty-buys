@@ -134,3 +134,8 @@ h1 {
 .span-review {
     font-family: 'Playfair Display', serif;
 }
+
+.card .card-image img {
+    display: initial;
+    width: auto;
+}
