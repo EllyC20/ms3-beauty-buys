@@ -1,32 +1,43 @@
 {% extends "base.html" %}
 {% block content %}
     <h1 class="center-align">All Reviews</h1>
-        <div class="row center-align">
-            {% for review in reviews %}
-                <div class="col s12 m4 center-align">
-                    <!-- CREDIT: Card layout utilised from https://materializecss.com/cards.html and customised for this project. -->
-                    <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="{{ review.url_link }}" id="review-image" alt="image of product being reviewed">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4 review-p">{{ review.product_name }}<i
-                                    class="fas fa-arrow-down right"></i></span>
-                            <p><a href="#">This is a link</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4 review-p">{{ review.product_name }}<i class="fas fa-arrow-up right"></i></span>
-                            <p class="center-align review-p">
-                                    Category: <span class="span-review">{{ review.category_name }}</span><br>
-                                    Product Description: <span class="span-review">{{ review.product_desc }}</span><br>
-                                    Review Detail: <span class="span-review">{{ review.review_detail }}</span><br>
-                                    Created By: <span class="span-review">{{ review.created_by }}</span><br>
-                            </p>
-                        </div>
-                    <!-- End Credit -->
+    <!-- Search function -->
+
+    <!-- Review display -->
+    <div class="row center-align">
+        {% for review in reviews %}
+            <div class="col s12 m4 center-align">
+                <!-- CREDIT: Card layout utilised from https://materializecss.com/cards.html and customised for this project. -->
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{ review.url_link }}" id="review-image" alt="image of product being reviewed">
                     </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4 review-p">
+                            <p>
+                                {{ review.product_name }}
+                            </p>
+                            <i class="fas fa-arrow-down right"></i>
+                        </span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 review-p">{{ review.product_name }}<i
+                                class="fas fa-arrow-up right"></i></span>
+                        <p class="center-align review-p">
+                            Category: <span class="span-review">{{ review.category_name }}</span><br>
+                            Product Description: <span class="span-review">{{ review.product_desc }}</span><br>
+                            Review Detail: <span class="span-review">{{ review.review_detail }}</span><br>
+                            Created By: <span class="span-review">{{ review.created_by }}</span><br>
+                        </p>
+                    </div>
+                    <div class="col s12">
+                        <a href="" class="btn-small edit-btn">Edit</a>
+                        <a href="" class="btn-small delete-btn">Delete</a>
+                    </div>
+                    <!-- End Credit -->
                 </div>
-            {% endfor %}
-        </div>
+            </div>
+        {% endfor %}
+    </div>
 
 {% endblock %}
