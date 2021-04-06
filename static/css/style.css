@@ -139,3 +139,25 @@ h1 {
     display: initial;
     width: auto;
 }
+
+.edit-btn {
+    background-color: #b08968;
+}
+
+.edit-btn:hover {
+    background-color: #b08968;
+    text-decoration: underline;
+}
+
+.delete-btn:hover {
+    background-color: #7f5539;
+    text-decoration: underline;
+}
+
+.delete-btn {
+    background: #7f5539;
+}
+
+.card-image {
+    min-height: 230px;
+}
