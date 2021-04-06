@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1 class="center-align">Edit Review Below</h1>
+
+    <div class="row">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
+            <!-- Category choice -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-folder-open prefix"></i>
+                    <select id="category_name" name="category_name" class="validate" required>
+                        <option value="" disabled selected>Choose Category</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="category_name">Product Category</label>
+                </div>
+            </div>
+            <!-- Product name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-question prefix"></i>
+                    <input id="product_name" name="product_name" minlength="5" maxlength="45"
+                        type="text" class="validate" required>
+                    <label for="product_name">Product Name</label>
+                </div>
+            </div>
+            <!-- Product description -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-question prefix"></i>
+                    <textarea id="product_desc" name="product_desc" class="materialize-textarea" minlength="5" 
+                        maxlength="30" required></textarea>
+                    <label for="product_desc">Product Description</label>
+                    <p class="helper-text">Please provide a brief outline of what this product is, for example: "A daily cleanser"</p>
+                </div>
+            </div>
+            <!-- Product review -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-question prefix"></i>
+                    <textarea id="review_detail" name="review_detail" class="materialize-textarea" minlength="10" maxlength="100"
+                        required></textarea>
+                    <label for="review_detail">Review Detail</label>
+                    <p class="helper-text">What you love about this product, or what you don't!</p>
+                </div>
+            </div>
+            <!-- Product image -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-question prefix"></i>
+                    <input id="url_link" name="url_link" type="url" pattern="https?://.+"  class="validate" required>
+                    <label for="url_link">Image URL</label>
+                    <span class="helper-text" data-error="Enter A Valid URL" data-success="Successfully Uploaded"></span>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Edit button -->
+                <button type="submit" class="col s12 m6 btn-large">
+                    Edit Review <i class="fas fa-edit"></i>
+                </button>
+                <!-- Cancel button -->
+                <button type="submit" class="col s12 m6 btn-large">
+                    Cancel <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+        
+
+{% endblock %}

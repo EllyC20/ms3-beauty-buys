@@ -98,6 +98,15 @@ def new_review():
     return render_template("new_review.html", categories=categories)
 
 
+@app.route("/edit_review/<review_id>", methods=["GET", "POST"])
+def edit_review(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+
+    categories = mongo.db.product_category.find().sort("category_name", 1)
+    return render_template(
+        "edit_review.html", review=review, categories=categories)
+
+
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.reviews.find()
