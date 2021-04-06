@@ -100,8 +100,20 @@ def new_review():
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
-    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "product_name": request.form.get("product_name"),
+            "product_desc": request.form.get("product_desc"),
+            "review_detail": request.form.get("review_detail"),
+            "url_link": request.form.get("url_link"),
+            "created_by": session["user"]
+        }
+        mongo.db.reviews.update({"_id": ObjectId(review_id)}, submit)
+        flash("Review Has Been Updated, Thank You.")
+        return redirect(url_for("get_reviews"))
 
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     categories = mongo.db.product_category.find().sort("category_name", 1)
     return render_template(
         "edit_review.html", review=review, categories=categories)
