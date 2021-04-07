@@ -154,10 +154,10 @@ h1 {
 
 /* Reviews */
 .card-image {
-    min-height: 230px;
+    min-height: 250px;
 }
 
 .card .card-image img {
     display: initial;
-    width: auto;
+    width: 250px;
 }
