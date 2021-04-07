@@ -119,6 +119,13 @@ def edit_review(review_id):
         "edit_review.html", review=review, categories=categories)
 
 
+@app.route("/delete_review/<review_id>")
+def delete_review(review_id):
+    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+    flash("Your Review Has Been Deleted")
+    return redirect(url_for("get_reviews"))
+
+
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.reviews.find()
