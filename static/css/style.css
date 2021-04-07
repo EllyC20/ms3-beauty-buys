@@ -103,16 +103,6 @@ h1 {
     font-size: 40px;
 }
 
-.btn-large {
-    background-color: #f8edeb;
-    color: #081c15;
-}
-
-.btn-large:hover {
-    background-color: #ff7096;
-    color: #f8edeb;
-}
-
 /* To ensure text doesn't look too large on smaller devices. */ 
 @media screen and (max-width: 425px){
   h1 { 
@@ -135,29 +125,39 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-.card .card-image img {
-    display: initial;
-    width: auto;
-}
-
-.edit-btn {
+/* Buttons */
+.edit-btn,
+.submit-btn,
+.login-btn,
+.register-btn {
     background-color: #b08968;
 }
 
-.edit-btn:hover {
+.edit-btn:hover,
+.submit-btn:hover,
+.login-btn:hover,
+.register-btn:hover {
     background-color: #b08968;
     text-decoration: underline;
 }
 
-.delete-btn:hover {
+.delete-btn,
+.cancel-btn {
+    background: #7f5539;
+}
+
+.delete-btn:hover,
+.cancel-btn:hover {
     background-color: #7f5539;
     text-decoration: underline;
 }
 
-.delete-btn {
-    background: #7f5539;
-}
-
+/* Reviews */
 .card-image {
     min-height: 230px;
+}
+
+.card .card-image img {
+    display: initial;
+    width: auto;
 }
