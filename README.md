@@ -57,7 +57,7 @@ Table Of Contents Here.
 
 ### 3.Structure
 
-** As A New User (Not Logged In)**
+**As A New User (Not Logged In)**
 
 * A user who is not logged in, can reach four pages;
 * Home / Index
@@ -65,7 +65,7 @@ Table Of Contents Here.
 * Register 
 * Log In 
 
-** As A Registered User (Logged In)** 
+**As A Registered User (Logged In)** 
 
 * A user who is logged in, can reach four pages;
 * Home / Index 
@@ -78,7 +78,7 @@ Table Of Contents Here.
 
 ### 4.Skeleton
 
- Desktop wireframes can be viewed ![here](readme-and-testing-images/ms3-desktop.pdf)
+ Desktop wireframes can be viewed [here](readme-and-testing-images/ms3-desktop.pdf)
 
  * The first wireframe shows the homepage, as a user who is not logged in.
  * The second wireframe shows the homepage, as a user who is logged in.
@@ -86,7 +86,7 @@ Table Of Contents Here.
  * The fifth wireframe shows the register page. 
  * The sixth wireframe shows the login page. 
 
- ** When viewing the wireframes there are some changes that should be noted, they are detailed below. **
+ **When viewing the wireframes there are some changes that should be noted, they are detailed below.**
  
  * The Homepage wireframe, shows a button featured on the opening image. Once I had designed and implemented the Navigation
  Bar the button felt like an unneccessary feature. The purpose was to allow the user to click the button to register, but with 
@@ -101,9 +101,6 @@ Table Of Contents Here.
 
  * The implementation of both the Register and Login pages differed, the image to the top of the page felt more appropiate and followed conventional design along with
   the layout of the rest of the site.
-
-
- 
 
 
 ### 5.Surface
