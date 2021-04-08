@@ -138,6 +138,13 @@ def delete_review(review_id):
     return redirect(url_for("reviews.html"))
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    reviews = mongo.db.reviews.find({"$text": {"$search": query}})
+    return render_template("reviews.html", reviews=reviews)
+
+
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.reviews.find()

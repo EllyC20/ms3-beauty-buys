@@ -127,16 +127,12 @@ h1 {
 
 /* Buttons */
 .edit-btn,
-.submit-btn,
-.login-btn,
-.register-btn {
+.submit-btn {
     background-color: #b08968;
 }
 
 .edit-btn:hover,
-.submit-btn:hover,
-.login-btn:hover,
-.register-btn:hover {
+.submit-btn:hover {
     background-color: #b08968;
     text-decoration: underline;
 }
@@ -150,6 +146,16 @@ h1 {
 .cancel-btn:hover {
     background-color: #7f5539;
     text-decoration: underline;
+}
+
+.login-btn,
+.register-btn  {
+    background-color: #ff7096;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #ff7096;
 }
 
 /* Reviews */
