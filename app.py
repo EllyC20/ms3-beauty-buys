@@ -60,7 +60,8 @@ def login():
                existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
-                return redirect(url_for("profile", username=session["user"]))
+                return redirect(url_for("get_reviews",
+                                username=session["user"]))
             else:
                 # Wrong password
                 flash("Incorrect Username And/Or Password")
@@ -71,17 +72,6 @@ def login():
             flash("Incorrect Username And/Or Password")
             return redirect(url_for("login"))
     return render_template("login.html")
-
-
-@app.route("/profile/<username>", methods=["GET", "POST"])
-def profile(username):
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-
-    if session["user"]:
-        return render_template("profile.html", username=username)
-
-    return redirect(url_for("login"))
 
 
 @app.route("/logout")
@@ -135,7 +125,7 @@ def edit_review(review_id):
 def delete_review(review_id):
     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
     flash("Your Review Has Been Deleted")
-    return redirect(url_for("reviews.html"))
+    return redirect(url_for("get_reviews"))
 
 
 @app.route("/search", methods=["GET", "POST"])
