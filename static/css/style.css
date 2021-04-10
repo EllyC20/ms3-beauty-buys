@@ -176,3 +176,7 @@ h1 {
 .card-panel {
     margin: .5rem 1rem .5rem 1rem;
 }
+
+.card .card-content {
+    padding: 20px;
+}
