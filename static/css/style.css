@@ -96,6 +96,11 @@ footer {
     background-color: rgba(0, 0, 0, 0.5)
 }
 
+.home-text {
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
 /* Register */
 
 h1 {
@@ -166,4 +171,8 @@ h1 {
 .card .card-image img {
     display: initial;
     width: 250px;
+}
+
+.card-panel {
+    margin: .5rem 1rem .5rem 1rem;
 }
