@@ -30,8 +30,8 @@
                         <span class="card-title activator grey-text text-darken-4 review-p">
                             <p>
                                 {{ review.product_name }}
+                                <i class="fas fa-arrow-down right"></i>
                             </p>
-                            <i class="fas fa-arrow-down right"></i>
                         </span>
                     </div>
                     <div class="card-reveal">
@@ -51,7 +51,7 @@
                             <!-- Prompt before deletion -->
                             <div id="modal{{ loop.index }}" class="modal">
                                 <div class="modal-content center-align">
-                                    <h1>Are you sure you want to delete {{ review.review_id }}?</h1>
+                                    <p class="review-p">Are you sure you want to delete your {{ review.product_name }} review?</p>
                                 </div>
                                 <div class="modal-footer">
                                     <a href="#" class="modal-close btn-small edit-btn">Cancel</a>
