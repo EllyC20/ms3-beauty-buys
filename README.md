@@ -3,11 +3,9 @@
 Am I Responsive Image Here
 
 Beauty Buys is a review site, where users can upload their own reviews of beauty products. Due to Covid-19 many people have had to tighten
-their purses, and pay closer attention to where their money is going. By having a site where users can read about products before purchasing
-ensures money is not wasted on unsuitable products. The aim is that a community of people with a common interest will be developed and 
-people can have fun learning and reviewing.
+their purses, and pay closer attention to where their money is going. By having a site where users can read about products before purchasing ensures money is not wasted on unsuitable products. The aim is that a community of people with a common interest will be developed and people can have fun learning and reviewing.
 
-The Deployed Live Site Link Here 
+The live website can be viewed [here](https://beauty-buys.herokuapp.com/)
 
 <br>
 
@@ -34,8 +32,7 @@ Table Of Contents Here.
 
 * I want to provide a way for users to register an account.
 * I want the users to have an easy and clear way of submitting a product review. 
-* I want to provide a functionality where users can provide an optional link to the product being reviewed. This could help me build affiliate
-  deals with brands.
+* I want to provide a functionality where users can provide an image of the product being reviewed. 
 * I want to have an admin account, this will ensure I can regulate reviews and remove any inappropiate content. 
 
 **As a Returning User**
@@ -59,6 +56,8 @@ Table Of Contents Here.
 
 **As A New User (Not Logged In)**
 
+![Structure of a user not logged in](readme-and-testing-images/not-logged-in-user.jpeg)
+
 * A user who is not logged in, can reach four pages;
 * Home / Index
 * Reviews - cannot upload a review.
@@ -67,11 +66,15 @@ Table Of Contents Here.
 
 **As A Registered User (Logged In)** 
 
+![Structure of a user who is logged in](readme-and-testing-images/logged-in-user.jpeg)
+
 * A user who is logged in, can reach four pages;
 * Home / Index 
 * Reviews - can edit or delete own reviews.
-* Edit Review - once user has chosen to edit a review. 
+* Edit Review 
 * Log Out
+
+**For All Users**
 
 * The Navbar provides access to these pages on all devices. This Navbar collapses to a Side Navbar on mobile devices.
 * The Footer contains Social Media links which the site owner can use to link to their accounts.
@@ -92,18 +95,37 @@ Table Of Contents Here.
  Bar the button felt like an unneccessary feature. The purpose was to allow the user to click the button to register, but with 
  the user being able to select "Register" in the Nav Bar, this fulfilled this purpose.
 
- * The Reviews page differed from my original wireframe. In my wireframe I thought I would use an accordion element to display the reviews. This 
- would have meant when the user opened the review page they would only have seen the product name and then expanded the rest of the review detail. 
- Upon implementing I felt this didn't give the user a good experience, it wasn't visually appealing and I decided a card reveal would be better. 
- By choosing to do this, the user visits the review page and is immediately shown a photo of the product being reviewed and the product name. The user
- can then expand this detail but rather than pushing the rest of the page down, the review slides up and the user can read the detail, close it and move on 
- to the next review they would like to read. 
+ * The Reviews page differed from my original wireframe. In my wireframe I thought I would use an accordion element to display the reviews. This would have meant when the user opened the review page they would only have seen the product name and then expanded the rest of the review detail. Upon implementing I felt this didn't give the user a good experience, it wasn't visually appealing and I decided a card reveal would be better. By choosing to do this, the user visits the review page and is immediately shown a photo of the product being reviewed and the product name. The user can then expand this detail but rather than pushing the rest of the page down, the review slides up and the user can read the detail, close it and move on to the next review they would like to read. 
 
- * The implementation of both the Register and Login pages differed, the image to the top of the page felt more appropiate and followed conventional design along with
-  the layout of the rest of the site.
+ * The implementation of both the Register and Login pages differed, the image to the top of the page felt more appropiate and followed conventional design along with the layout of the rest of the site.
 
 
 ### 5.Surface
+
+**Colours**
+
+![Colour scheme](readme-and-testing-images/ms3-color.png)
+
+* The user sees the soft pink hue of the Home Page upon visiting the site. The pink was chosen to complement the main home image. The colour is gentle and doesn't detract from the aim of the site. 
+
+* The two neutral tones are shown in my "Register" and "Log In" pages, and on the "Reviews" page. Neutral tones are well loved and appreciated within the beauty community, again they are subtle and allow the user to focus on the content. 
+
+* The forest green creates a very subtle difference, when the user hovers over the navigational links the green turns to the classic black. 
+
+**Font**
+
+The two fonts included are "Kiwi Maru", a serif font and "Playfair Display" also a serif. 
+
+"Kiwi Maru" can be seen in the brand name, any H1's and also within the card reveal of reviews. 
+
+The remainder of the text is "Playfair Display". The two complement each other nicely, when choosing them I used Google Fonts and typed in the brand name to see how it would look in all of the fonts. Once I chose "Kiwi Maru" I then looked at the recommended pairings and chose "Playfair Display".
+
+**Images**
+
+There are two main images on the site. One is on the "Homepage" while the other is on both the "Registration" and "Log In" pages. 
+
+The first image, on the homepage has soft, complimentary colours. The image is welcoming and showcases a sense of happiness and joy. 
+The second image is very important as it shows an inclusive group, letting the user know that anyone is welcome to join the community. 
 
 <br>
 
@@ -142,6 +164,7 @@ Table Of Contents Here.
 * [Font Awesome]()
 * [cdnjs]()
 * [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+* [Lucidchart](https://www.lucidchart.com/pages/)
 
 <br>
 
