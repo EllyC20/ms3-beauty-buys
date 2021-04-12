@@ -18,6 +18,7 @@
         </div>
 
     <!-- Review display -->
+    {% if reviews.count() > 0 %}
     <div class="row center-align">
         {% for review in reviews %}
             <div class="col s12 m4 center-align">
@@ -67,4 +68,7 @@
             </div>
         {% endfor %}
     </div>
+    {% else %}
+        <h1 class="center-align">No Reviews Found, Sorry!</h1>
+    {% endif%}
 {% endblock %}
