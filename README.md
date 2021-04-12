@@ -60,7 +60,7 @@ Table Of Contents Here.
 
 * A user who is not logged in, can reach four pages;
 * Home / Index
-* Reviews - cannot upload a review.
+* Reviews - Cannot upload a review.
 * Register 
 * Log In 
 
@@ -70,7 +70,7 @@ Table Of Contents Here.
 
 * A user who is logged in, can reach four pages;
 * Home / Index 
-* Reviews - can edit or delete own reviews.
+* Reviews - Can edit or delete own reviews.
 * Edit Review 
 * Log Out
 
@@ -78,6 +78,16 @@ Table Of Contents Here.
 
 * The Navbar provides access to these pages on all devices. This Navbar collapses to a Side Navbar on mobile devices.
 * The Footer contains Social Media links which the site owner can use to link to their accounts.
+
+**Database Schema** 
+
+![Structure of Database in MongoDB](readme-and-testing-images/db-schema.jpeg)
+
+The Database is outlined as above. The database is named "Beauty Buys". Within the database are three collections, "product_category", "reviews" and "users". "product_category" holds four documents which are named "Facial Skincare", "Haircare", "Makeup" and "Body Skincare". These are the options the user has to choose from for "Category" when submitting a new review. This can be seen in the images below. 
+
+![Structure of product_category](readme-and-testing-images/form-view-one.png)
+![Structure of product_category](readme-and-testing-images/form-view-two.png)
+
 
 ### 4.Skeleton
 
@@ -164,7 +174,7 @@ The second image is very important as it shows an inclusive group, letting the u
 * [Font Awesome]()
 * [cdnjs]()
 * [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-* [Lucidchart](https://www.lucidchart.com/pages/)
+* [Lucidchart](https://www.lucidchart.com/pages/) - For images used in "Structure" section of README.
 
 <br>
 
