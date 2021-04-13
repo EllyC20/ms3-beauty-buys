@@ -1,6 +1,6 @@
 # Beauty Buys
 
-Am I Responsive Image Here
+![Am I Responsive Image](readme-and-testing-images/am-i-responsive.png)
 
 Beauty Buys is a review site, where users can upload their own reviews of beauty products. Due to Covid-19 many people have had to tighten
 their purses, and pay closer attention to where their money is going. By having a site where users can read about products before purchasing ensures money is not wasted on unsuitable products. The aim is that a community of people with a common interest will be developed and people can have fun learning and reviewing.
@@ -149,13 +149,17 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 The user has the ability to complete a form to create a record in the database. In this case, the record created is a review and the user fills in appropiate information relating to a product of their choice. 
 
-![Create](readme-and-testing-images/form-view-two.png) <br>
+![Create](readme-and-testing-images/form-view-two.png) 
+
+<br>
 
 **Read** 
 
 The user can visit the "Reviews" page and read all reviews made, both by themselves and others. 
 
-![Read](readme-and-testing-images/read-function.png) <br>
+![Read](readme-and-testing-images/read-function.png) 
+
+<br>
 
 **Update**
 
@@ -173,7 +177,9 @@ Updated review detail:
 
 The user is then shown a flash message confirming the updating of the review.
 
-![Edit](readme-and-testing-images/edit-function-four.png) <br>
+![Edit](readme-and-testing-images/edit-function-four.png) 
+
+<br>
 
 **Delete**
 
@@ -187,7 +193,9 @@ When the user chooses "Delete" they will be prompted to confirm that this is wha
 
 If the user chooses "Cancel" from this modal, they will simply be returned to the "Reviews" page. If they choose "Delete" their review will be deleted from the database and they will be shown a confirmation flash message of this. 
 
-![Delete](readme-and-testing-images/delete-function-two.png) <br>
+![Delete](readme-and-testing-images/delete-function-two.png) 
+
+<br>
 
 ### Current Features 
 
@@ -241,14 +249,15 @@ If the user chooses "Cancel" from this modal, they will simply be returned to th
 * [Coolors](https://coolors.co/palettes/trending)
 * [Font Awesome]()
 * [cdnjs]()
-* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) - As recommended by previous assesor on Milestone Two project.
 * [Lucidchart](https://www.lucidchart.com/pages/) - For images used in "Structure" section of README.
+* [Am I Responsive](http://ami.responsivedesign.is/) - For the image showing the site at the top of this README.
 
 <br>
 
 ## Testing 
 
-Link to TESTINGMD here. 
+All testing detail can be found [here.](TESTING.md) 
 
 ## Deployment 
 
