@@ -141,12 +141,80 @@ The second image is very important as it shows an inclusive group, letting the u
 
 ## Features 
 
+### CRUD 
+
+The main focus of this project is providing CRUD functionality while maintaining a database. CRUD is represented and shown in the following ways.
+
+**Create** 
+
+The user has the ability to complete a form to create a record in the database. In this case, the record created is a review and the user fills in appropiate information relating to a product of their choice. 
+
+![Create](readme-and-testing-images/form-view-two.png)
+
+**Read** 
+
+The user can visit the "Reviews" page and read all reviews made, both by themselves and others. 
+
+![Read](readme-and-testing-images/read-function.png)
+
+**Update**
+
+Once the user has uploaded a review, they will be able to see two buttons on their own reviews. These two buttons are "Edit" and "Delete. The "Edit" button, provides the update functionality.
+
+![Edit](readme-and-testing-images/edit-function-one.png)
+
+When the user chooses "Edit" they will be shown the following form which will allow them to update the data held in the database. They will be shown the data they've previously provided and they can update this as they wish. 
+
+![Edit](readme-and-testing-images/edit-function-two.png)
+
+Updated review detail: 
+
+![Edit](readme-and-testing-images/edit-function-three.png)
+
+The user is then shown a flash message confirming the updating of the review.
+
+![Edit](readme-and-testing-images/edit-function-four.png)
+
+**Delete**
+
+As mentioned above, the user who has created the review can view an "Edit" button and a "Delete" button. 
+
+![Delete](readme-and-testing-images/edit-function-one.png)
+
+When the user chooses "Delete" they will be prompted to confirm that this is what they wish to do. 
+
+![Delete](readme-and-testing-images/delete-function-one.png)
+
+If the user chooses "Cancel" form this modal, they will simply be returned to the "Reviews" page. If they choose "Delete" their review will be deleted from the database and they will be shown a confirmation flash message of this. 
+
+![Delete](readme-and-testing-images/delete-function-two.png)
+
 ### Current Features 
+
+* A fixed Navbar, that collapses on medium devices and below to a hamburger menu. The mobile navbar features a "Home" option as on extremely small device sizes, the user faced difficulty in clicking to the side of the menu to collapse it again. 
+
+* A welcoming "Home Page", detailing the sites purpose and how to use it. The "Home Page" features a carousel of product images that encourage the user to visit the review page to find out about the products.
+
+* A Footer, features links to all social media accounts.
+
+* The "Reviews" page has a search function, the function checks the product name, the product description and review detail for the keyword the user is looking for. If a product is found, the result(s) are displayed. If there are no results, the user will be informed of this. 
+
+* The reviews are displayed in card reveals, when visiting the "Reviews" the user sees an image and product title, the user can then choose which review they wish to expand the detail of. 
+
+* A form allowing the user to upload reviews, the same form is utilised when a user wants to edit a review. 
+
+* A form allowing the user to register, or log in if they have previously registered. 
 
 ### Feautures To Be Implemented
 
 * In the future a feature could be added where a user could use their smartphone camera to scan a products barcode to provide product name 
   and details quickly, then they would only need to upload a reiew. 
+
+* A community forum, where users could reach out to each other and discuss products.
+
+* An option to sign up for a newsletter, which would inform the user of new reviews added. 
+
+* The site could be developed to the point of being a mobile app, providing ease of use and accessibility. 
 
 <br>
 
