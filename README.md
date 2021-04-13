@@ -149,13 +149,13 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 The user has the ability to complete a form to create a record in the database. In this case, the record created is a review and the user fills in appropiate information relating to a product of their choice. 
 
-![Create](readme-and-testing-images/form-view-two.png)
+![Create](readme-and-testing-images/form-view-two.png) <br>
 
 **Read** 
 
 The user can visit the "Reviews" page and read all reviews made, both by themselves and others. 
 
-![Read](readme-and-testing-images/read-function.png)
+![Read](readme-and-testing-images/read-function.png) <br>
 
 **Update**
 
@@ -173,7 +173,7 @@ Updated review detail:
 
 The user is then shown a flash message confirming the updating of the review.
 
-![Edit](readme-and-testing-images/edit-function-four.png)
+![Edit](readme-and-testing-images/edit-function-four.png) <br>
 
 **Delete**
 
@@ -185,9 +185,9 @@ When the user chooses "Delete" they will be prompted to confirm that this is wha
 
 ![Delete](readme-and-testing-images/delete-function-one.png)
 
-If the user chooses "Cancel" form this modal, they will simply be returned to the "Reviews" page. If they choose "Delete" their review will be deleted from the database and they will be shown a confirmation flash message of this. 
+If the user chooses "Cancel" from this modal, they will simply be returned to the "Reviews" page. If they choose "Delete" their review will be deleted from the database and they will be shown a confirmation flash message of this. 
 
-![Delete](readme-and-testing-images/delete-function-two.png)
+![Delete](readme-and-testing-images/delete-function-two.png) <br>
 
 ### Current Features 
 
