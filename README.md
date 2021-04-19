@@ -91,13 +91,17 @@ The Database is outlined as above. The database is named "Beauty Buys". Within t
 
 ### 4.Skeleton
 
- Desktop wireframes can be viewed [here](readme-and-testing-images/ms3-desktop.pdf)
+ **Desktop wireframes can be viewed [here](readme-and-testing-images/ms3-desktop.pdf)**
 
  * The first wireframe shows the homepage, as a user who is not logged in.
  * The second wireframe shows the homepage, as a user who is logged in.
  * The third and fourth wireframe shows the review page, as a user who is not logged in. 
  * The fifth wireframe shows the register page. 
  * The sixth wireframe shows the login page. 
+
+ **Mobile wireframes can be viewed [here](readme-and-testing-images/ms3-mobile.pdf)** 
+ 
+ **Tablet or medium device sizes can be viewed [here](readme-and-testing-images/ms3-tablet.pdf)**
 
  **When viewing the wireframes there are some changes that should be noted, they are detailed below.**
  
