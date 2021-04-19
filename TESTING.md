@@ -12,7 +12,7 @@ To validate the HTML, the deployed URL for each page was tested. Listed below ar
 
 **Reviews** 
 
-As seen below, errors occured due to two things. The use of "ID" on the review image caused an error, the validator was noting there were multiple elements with the same ID. To fix this I changed the ID to a class. Secondly, the use of a <p> tag within a span was incorrect and affecting the flow of the page. I removed the "p" tag and ensured the span held the same styling as I had intended, this solved the error.
+As seen below, errors occured due to two things. The use of "ID" on the review image caused an error, the validator was noting there were multiple elements with the same ID. To fix this I changed the ID to a class. Secondly, the use of a "p" tag within a span was incorrect and affecting the flow of the page. I removed the "p" tag and ensured the span held the same styling as I had intended, this solved the error.
 
 ![HTML validator](readme-and-testing-images/reviews-html-checker.png)
 ![HTML validator](readme-and-testing-images/reviews-html-checker-2.png)
@@ -52,6 +52,60 @@ To validate Python code, the code was copied and checked by direct input. No err
 ![Python validator](readme-and-testing-images/python-validator.png)
 
 ## Database Testing 
+
+## Testing User Stories 
+
+Below there are supporting images for each user story to demonstrate how that requirement is fulfilled.
+
+**As a User**
+
+* "I want to have the functionality to register an account." 
+
+A user can register an account using the "Register" page. 
+
+![User Story Testing](readme-and-testing-images/user-story-test-1.png)
+
+* "I want to be able to upload a review for different product categories."
+
+Within the "New Review" page, a user who has an account can submit the below form to submit a review.
+
+![User Story Testing](readme-and-testing-images/form-view-two.png)
+
+* "I want to be able to read reviews left by other users."
+
+On the "Reviews" page any user can read the previous reviews left.
+
+![User Story Testing](readme-and-testing-images/user-story-test-3.png)
+
+* "I want to be able to delete or edit a review I have made."
+
+Once signed in, a user can see an edit button on a review they have made. When they click edit they can change any of the information previously provided.
+
+![User Story Testing](readme-and-testing-images/edit-function-one.png)
+![User Story Testing](readme-and-testing-images/edit-function-two.png)
+
+* "I don't want other users to be able to edit or delete a review I have made."
+
+As mentioned above, only when a user signs in do they get access to edit or delete. They may only edit or delete their own reviews.
+
+![User Story Testing](readme-and-testing-images/user-story-test-5.png)
+
+* "I want to be able to search for particular products."
+
+A search bar provides the option to search by keyword. If there is a result it will be shown, otherwise the below flash message is shown.
+
+![User Story Testing](readme-and-testing-images/user-story-test-6.png)
+![User Story Testing](readme-and-testing-images/user-story-test-7.png)
+
+**As a Site Owner**
+
+* I want to provide a way for users to register an account.
+
+* I want the users to have an easy and clear way of submitting a product review. 
+
+* I want to provide a functionality where users can provide an image of the product being reviewed. 
+
+* I want to have an admin account, this will ensure I can regulate reviews and remove any inappropiate content. 
 
 ## Responsive Design
 
