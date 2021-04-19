@@ -4,9 +4,34 @@
 
 **[HTML Validator](https://validator.w3.org/)**
 
-To validate the HTML, the deployed URL was tested. One error returned which is captured below. The error relates to <section> within the base.html. This is the area that contains my flash messages, therefore this error may be ignored in this case.
+To validate the HTML, the deployed URL for each page was tested. Listed below are any issues encountered, and fixes. There is one reoccuring error message, the error relates to <section> within the base.html. This is the area that contains my flash messages, therefore this error may be ignored in this case. 
+
+**Home**
 
 ![HTML validator](readme-and-testing-images/html-validator.png)
+
+**Reviews** 
+
+As seen below, errors occured due to two things. The use of "ID" on the review image caused an error, the validator was noting there were multiple elements with the same ID. To fix this I changed the ID to a class. Secondly, the use of a <p> tag within a span was incorrect and affecting the flow of the page. I removed the <p> tag and ensured the span held the same styling as I had intended, this solved the error.
+
+![HTML validator](readme-and-testing-images/reviews-html-checker.png)
+![HTML validator](readme-and-testing-images/reviews-html-checker-2.png)
+
+**Log In**
+
+![HTML validator](readme-and-testing-images/login-validator.png)
+
+**Register**
+
+![HTML validator](readme-and-testing-images/register-validator.png)
+
+**New Review**
+
+![HTML validator](readme-and-testing-images/new-review-validator.png)
+
+**Edit Review**
+
+![HTML validator](readme-and-testing-images/edit-review-validator.png)
 
 **[CSS](https://jigsaw.w3.org/css-validator/)**
 
