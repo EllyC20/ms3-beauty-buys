@@ -3,7 +3,9 @@
 ![Am I Responsive Image](readme-and-testing-images/am-i-responsive.png)
 
 Beauty Buys is a review site, where users can upload their own reviews of beauty products. Due to Covid-19 many people have had to tighten
-their purses, and pay closer attention to where their money is going. By having a site where users can read about products before purchasing ensures money is not wasted on unsuitable products. The aim is that a community of people with a common interest will be developed and people can have fun learning and reviewing.
+their purses, and pay closer attention to where their money is going. <br>
+By having a site where users can read about products before purchasing ensures money is not wasted on unsuitable products. 
+The aim is that a community of people with a common interest will be developed and people can have fun learning and reviewing.
 
 The live website can be viewed [here](https://beauty-buys.herokuapp.com/)
 
@@ -74,6 +76,10 @@ Table Of Contents Here.
 * Edit Review 
 * Log Out
 
+**As Admin (Site Owner)**
+
+* Admin has access to all pages and an extra page named "Manage Reviews". The Admin can edit or delete any review made on the site. The purpose of the account is to manage and maintain all reviews, if any inappropiate reviews are made the Admin user can easily delete or modify as they wish. 
+
 **For All Users**
 
 * The Navbar provides access to these pages on all devices. This Navbar collapses to a Side Navbar on mobile devices.
@@ -83,7 +89,22 @@ Table Of Contents Here.
 
 ![Structure of Database in MongoDB](readme-and-testing-images/db-schema.jpeg)
 
-The Database is outlined as above. The database is named "Beauty Buys". Within the database are three collections, "product_category", "reviews" and "users". "product_category" holds four documents which are named "Facial Skincare", "Haircare", "Makeup" and "Body Skincare". These are the options the user has to choose from for "Category" when submitting a new review. This can be seen in the images below. 
+The Database is outlined as above. The database is named "Beauty Buys". 
+
+Within the database are three collections;
+
+ 1. "product_category" 
+ 2. "reviews"
+ 3. "users"
+
+ "product_category" holds four documents which are named;
+
+ 1. "Facial Skincare"
+ 2. "Haircare"
+ 3. "Makeup" 
+ 4. "Body Skincare"
+ 
+These four options are what the user chooses from for "Category" when submitting a new review. This can be seen in the images below. 
 
 ![Structure of product_category](readme-and-testing-images/form-view-one.png)
 ![Structure of product_category](readme-and-testing-images/form-view-two.png)
@@ -92,12 +113,6 @@ The Database is outlined as above. The database is named "Beauty Buys". Within t
 ### 4.Skeleton
 
  **Desktop wireframes can be viewed [here](wireframes/desktop-wireframes)**
-
- * The first wireframe shows the homepage, as a user who is not logged in.
- * The second wireframe shows the homepage, as a user who is logged in.
- * The third and fourth wireframe shows the review page, as a user who is not logged in. 
- * The fifth wireframe shows the register page. 
- * The sixth wireframe shows the login page. 
 
  **Mobile wireframes can be viewed [here](wireframes/mobile-wireframes)** 
 
@@ -122,24 +137,25 @@ The Database is outlined as above. The database is named "Beauty Buys". Within t
 
 * The user sees the soft pink hue of the Home Page upon visiting the site. The pink was chosen to complement the main home image. The colour is gentle and doesn't detract from the aim of the site. 
 
-* The two neutral tones are shown in my "Register" and "Log In" pages, and on the "Reviews" page. Neutral tones are well loved and appreciated within the beauty community, again they are subtle and allow the user to focus on the content. 
+* The two neutral tones are shown on the "Reviews" and "Edit Review" pages. Neutral tones are subtle and allow the user to focus on the content. 
 
 * The forest green creates a very subtle difference, when the user hovers over the navigational links the green turns to the classic black. 
 
 **Font**
 
-The two fonts included are "Kiwi Maru", a serif font and "Playfair Display" also a serif. 
+* The two fonts included are "Kiwi Maru", a serif font and "Playfair Display" also a serif. 
 
-"Kiwi Maru" can be seen in the brand name, any H1's and also within the card reveal of reviews. 
+* "Kiwi Maru" can be seen in the brand name, any H1's and also within the card reveal of reviews. 
 
-The remainder of the text is "Playfair Display". The two complement each other nicely, when choosing them I used Google Fonts and typed in the brand name to see how it would look in all of the fonts. Once I chose "Kiwi Maru" I then looked at the recommended pairings and chose "Playfair Display".
+* The remainder of the text is "Playfair Display". The two complement each other nicely, when choosing them I used Google Fonts and typed in the brand name to see how it would look in all of the fonts. Once I chose "Kiwi Maru" I then looked at the recommended pairings and chose "Playfair Display".
 
 **Images**
 
-There are two main images on the site. One is on the "Homepage" while the other is on both the "Registration" and "Log In" pages. 
+* There are two main images on the site. One is on the "Homepage" while the other is on both the "Registration" and "Log In" pages. 
 
-The first image, on the homepage has soft, complimentary colours. The image is welcoming and showcases a sense of happiness and joy. 
-The second image is very important as it shows an inclusive group, letting the user know that anyone is welcome to join the community. 
+* The first image, on the homepage has soft, complimentary colours. The image is welcoming and showcases a sense of happiness and joy. 
+
+* The second image is very important as it shows an inclusive group, letting the user know that anyone is welcome to join the community. 
 
 <br>
 
