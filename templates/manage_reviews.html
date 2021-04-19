@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="center-align">For Admin - Manage Reviews</h1>
+    <!-- Search function -->
+        <div class="row card-panel">
+            <form action="{{ url_for('search') }}" method="POST" class="col-s12">
+                <div class="row center-align">
+                    <div class="input-field col s12">
+                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                        <label for="query">Search Reviews</label>
+                    </div>
+                    <div class="col s12">
+                        <a href="{{ url_for('get_reviews') }}" class="btn-small edit-btn"> Clear </a>
+                        <button type="submit" class="btn-small delete-btn"> Search </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    <!-- Review display -->
+    {% if reviews.count() > 0 %}
+    <div class="row center-align">
+        {% for review in reviews %}
+            <div class="col s12 m4 center-align">
+                <!-- CREDIT: Card layout utilised from https://materializecss.com/cards.html and customised for this project. -->
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{ review.url_link }}" id="review-image" alt="image of product being reviewed">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4 review-p">
+                            <p>
+                                {{ review.product_name }}
+                                <i class="fas fa-arrow-down right"></i>
+                            </p>
+                        </span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 review-p">{{ review.product_name }}<i
+                                class="fas fa-arrow-up right"></i></span>
+                        <p class="center-align review-p">
+                            Category: <span class="span-review">{{ review.category_name }}</span><br>
+                            Product Description: <span class="span-review">{{ review.product_desc }}</span><br>
+                            Review Detail: <span class="span-review">{{ review.review_detail }}</span><br>
+                            Created By: <span class="span-review">{{ review.created_by }}</span><br>
+                        </p>
+                    </div>
+                    <div class="col s12">
+                            <button class="modal-trigger btn-small delete-btn" href="#modal{{ loop.index }}">Delete</button>
+                            <!-- Credit: Materialize used to implement modal, modified for project -->
+                            <!-- Prompt before deletion -->
+                            <div id="modal{{ loop.index }}" class="modal">
+                                <div class="modal-content center-align">
+                                    <p class="review-p">Are you sure you want to delete the {{ review.product_name }} review?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" class="modal-close btn-small edit-btn">Cancel</a>
+                                    <a href="{{ url_for('delete_review', review_id=review._id)}}" class="btn-small delete-btn">Delete</a>
+                                </div>
+                            </div>
+                               <!-- <a href="{{ url_for('delete_review', review_id=review._id) }}" class="btn-small delete-btn">Delete</a> -->
+                                <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn-small edit-btn">Edit</a>
+                    </div>
+                    <!-- End Credit -->
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+{% endblock %}

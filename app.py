@@ -141,6 +141,12 @@ def get_reviews():
     return render_template("reviews.html", reviews=reviews)
 
 
+@app.route("/manage_reviews")
+def manage_reviews():
+    reviews = mongo.db.reviews.find()
+    return render_template("manage_reviews.html", reviews=reviews)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
