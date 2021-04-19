@@ -119,17 +119,6 @@ h1 {
     font-size: 10px;
 }
 
-/* New Review */
-.review-p {
-    font-family: 'Kiwi Maru', serif;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.span-review {
-    font-family: 'Playfair Display', serif;
-}
-
 /* Buttons */
 .edit-btn,
 .submit-btn {
@@ -154,10 +143,7 @@ h1 {
 }
 
 .login-btn,
-.register-btn  {
-    background-color: #ff7096;
-}
-
+.register-btn,
 .login-btn:hover,
 .register-btn:hover {
     background-color: #ff7096;
@@ -179,4 +165,16 @@ h1 {
 
 .card .card-content {
     padding: 20px;
+}
+
+.review-p {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.span-review {
+    font-family: 'Playfair Display', serif;
+    color: #ff7096;
+    letter-spacing: 1px;
 }
