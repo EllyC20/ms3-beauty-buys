@@ -91,13 +91,13 @@ Table Of Contents Here.
 
 The Database is outlined as above. The database is named "Beauty Buys". 
 
-Within the database are three collections;
+**Within the database are three collections;**
 
  1. "product_category" 
  2. "reviews"
  3. "users"
 
- "product_category" holds four documents which are named;
+ **"product_category" holds four documents which are named;**
 
  1. "Facial Skincare"
  2. "Haircare"
@@ -167,7 +167,7 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 **Create** 
 
-The user has the ability to complete a form to create a record in the database. In this case, the record created is a review and the user fills in appropiate information relating to a product of their choice. 
+**The user has the ability to complete a form to create a record in the database. In this case, the record created is a review and the user fills in appropiate information relating to a product of their choice.**
 
 ![Create](readme-and-testing-images/form-view-two.png) 
 
@@ -175,7 +175,7 @@ The user has the ability to complete a form to create a record in the database. 
 
 **Read** 
 
-The user can visit the "Reviews" page and read all reviews made, both by themselves and others. 
+**The user can visit the "Reviews" page and read all reviews made, both by themselves and others.**
 
 ![Read](readme-and-testing-images/read-function.png) 
 
@@ -183,19 +183,19 @@ The user can visit the "Reviews" page and read all reviews made, both by themsel
 
 **Update**
 
-Once the user has uploaded a review, they will be able to see two buttons on their own reviews. These two buttons are "Edit" and "Delete. The "Edit" button, provides the update functionality.
+- **Once the user has uploaded a review, they will be able to see two buttons on their own reviews. These two buttons are "Edit" and "Delete. The "Edit" button, provides the update functionality.**
 
 ![Edit](readme-and-testing-images/edit-function-one.png)
 
-When the user chooses "Edit" they will be shown the following form which will allow them to update the data held in the database. They will be shown the data they've previously provided and they can update this as they wish. 
+- **When the user chooses "Edit" they will be shown the following form which will allow them to update the data held in the database. They will be shown the data they've previously provided and they can update this as they wish.**
 
 ![Edit](readme-and-testing-images/edit-function-two.png)
 
-Updated review detail: 
+- **Updated review detail:** 
 
 ![Edit](readme-and-testing-images/edit-function-three.png)
 
-The user is then shown a flash message confirming the updating of the review.
+- **The user is then shown a flash message confirming the updating of the review.**
 
 ![Edit](readme-and-testing-images/edit-function-four.png) 
 
@@ -203,15 +203,15 @@ The user is then shown a flash message confirming the updating of the review.
 
 **Delete**
 
-As mentioned above, the user who has created the review can view an "Edit" button and a "Delete" button. 
+- **As mentioned above, the user who has created the review can view an "Edit" button and a "Delete" button.** 
 
 ![Delete](readme-and-testing-images/edit-function-one.png)
 
-When the user chooses "Delete" they will be prompted to confirm that this is what they wish to do. 
+- **When the user chooses "Delete" they will be prompted to confirm that this is what they wish to do.**
 
 ![Delete](readme-and-testing-images/delete-function-one.png)
 
-If the user chooses "Cancel" from this modal, they will simply be returned to the "Reviews" page. If they choose "Delete" their review will be deleted from the database and they will be shown a confirmation flash message of this. 
+- **If the user chooses "Cancel" from this modal, they will simply be returned to the "Reviews" page. If they choose "Delete" their review will be deleted from the database and they will be shown a confirmation flash message of this.**
 
 ![Delete](readme-and-testing-images/delete-function-two.png) 
 
@@ -317,7 +317,9 @@ All testing detail can be found [here.](TESTING.md)
 
 * My homepage image is from Pexel and can be found [here.](https://www.pexels.com/photo/happy-woman-removing-face-mask-after-taking-bath-3852159/)
 * The image on my register and login pages is from PngKey, which can be found [here.](https://www.pngkey.com/detail/u2e6q8o0y3w7e6t4_customer-clipart-client-happy-cartoon-image-of-people)
-* Review images are taken from Google, and copying the URL link. 
-* The images in the carousel are taken from Google, and copying the URL link. 
+* Review images are taken from Google Images, and copying the URL link. Specific product images are not available from royalty free sites, this is why Google Images are in use. 
+* The images in the carousel are taken from Google Images, and copying the URL link. Specific product images are not available from royalty free sites, this is why Google Images are in use. 
 
 ### Acknowledgements
+
+* To Code Institute who provided the lessons and mini project that guided this project. 
