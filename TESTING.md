@@ -109,6 +109,15 @@ A search bar provides the option to search by keyword. If there is a result it w
 
 ## Responsive Design
 
+| Browser        | Google Chrome | Safari | Firefox | Microsoft Edge | Opera |
+|----------------|---------------|--------|---------|----------------|-------|
+| Responsiveness | Good          | Good   | Good    | Good           | Good  |
+| Appearance     | Good          | Good   | Good    | Good           | Good  |
+
+**Things To Note**
+
+* On Safari and Firefox, the font is heavier within "Reviews" which makes it appear that the text colour is darker. On Firefox only, the colour palette of the navigation bar and the "Register" and "Log In" buttons, appears lighter.
+
 ## Problems Encountered 
 
 * While testing my "Reviews" page on multiple devices I noted while using an Ipad Pro that the edit and delete buttons escaped their card
