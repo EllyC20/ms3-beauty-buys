@@ -248,30 +248,53 @@ If the user chooses "Cancel" from this modal, they will simply be returned to th
 
 ## Languages Used 
 
-* [HTML5]()
-* [CSS3]()
-* [Python]()
-* [jQuery]()
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) 
+  -  Used for basic content structure.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) 
+  - Used for styling content.
+* [Python](https://www.python.org/) 
+  - Used to implement backend development. 
+* [jQuery](https://jquery.com/)
+  - Used to initialize interactive features.
 
-## Frameworks And Libaries & Other Tools Used 
+## Frameworks, Libaries & Other Tools Used 
 
-* [Gitpod]()
-* [Github]()
-* [Git]()
-* [Google Fonts]()
-* [TinyPng]()
-* [Balsamiq]()
-* [MongoDb]()
-* [Heroku]()
-* [Jinja]()
-* [Flask]()
-* [Werkzeug]()
+* [Gitpod](https://www.gitpod.io/)
+  - For development of the project.
+* [Github](https://github.com/)
+  - Used to store the project.
+* [Git](https://git-scm.com/)
+  - Used for version control.
+* [Google Fonts](https://fonts.google.com/)
+  - To implement the two fonts used.
+* [TinyPng](https://tinypng.com/)
+  - To compress image sizes.
+* [Balsamiq](https://balsamiq.com/)
+  - To design wireframes.
+* [MongoDb](https://www.mongodb.com/2)
+  - Cloud database service utilised for the project.
+* [Heroku](https://id.heroku.com/)
+  - Cloud platform to deploy the project.
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+  - Used to template Python.
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+  - Provides libaries, tools and technologies for the project.
+* [Materialize](https://materializecss.com/)
+  - Used for structure and layout of project.
+* [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
+  - Used for password hashing and authentication.
 * [Coolors](https://coolors.co/palettes/trending)
-* [Font Awesome]()
-* [cdnjs]()
-* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) - As recommended by previous assesor on Milestone Two project.
-* [Lucidchart](https://www.lucidchart.com/pages/) - For images used in "Structure" section of README.
-* [Am I Responsive](http://ami.responsivedesign.is/) - For the image showing the site at the top of this README.
+  - To visualise a colour scheme.
+* [Font Awesome](https://fontawesome.com/)
+  - For any icons within the site.
+* [cdnjs](https://cdnjs.com/)
+  - To get Font Awesome linked.
+* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+  - As recommended by previous assesor on Milestone Two project.
+* [Lucidchart](https://www.lucidchart.com/pages/) 
+  - For images used in "Structure" section of README.
+* [Am I Responsive](http://ami.responsivedesign.is/) 
+  - For the image showing the site at the top of this README.
 
 <br>
 
@@ -287,9 +310,14 @@ All testing detail can be found [here.](TESTING.md)
 
 ### Content 
 
+* All home page content is written by me.
+* All reviews are written by me or people who I asked to submit reviews. 
+
 ### Media 
 
 * My homepage image is from Pexel and can be found [here.](https://www.pexels.com/photo/happy-woman-removing-face-mask-after-taking-bath-3852159/)
 * The image on my register and login pages is from PngKey, which can be found [here.](https://www.pngkey.com/detail/u2e6q8o0y3w7e6t4_customer-clipart-client-happy-cartoon-image-of-people)
+* Review images are taken from Google, and copying the URL link. 
+* The images in the carousel are taken from Google, and copying the URL link. 
 
 ### Acknowledgements
