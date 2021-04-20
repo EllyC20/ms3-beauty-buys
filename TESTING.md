@@ -59,40 +59,46 @@ Below there are supporting images for each user story to demonstrate how that re
 
 **As a User**
 
-* "I want to have the functionality to register an account." 
+1. 
+    - "I want to have the functionality to register an account." 
 
-A user can register an account using the "Register" page. 
+**A user can register an account using the "Register" page.**
 
 ![User Story Testing](readme-and-testing-images/user-story-test-1.png)
 
-* "I want to be able to upload a review for different product categories."
+2. 
+    - "I want to be able to upload a review for different product categories."
 
-Within the "New Review" page, a user who has an account can submit the below form to submit a review.
+**Within the "New Review" page, a user who has an account can submit the below form to submit a review.**
 
 ![User Story Testing](readme-and-testing-images/form-view-two.png)
 
-* "I want to be able to read reviews left by other users."
+3. 
+    - "I want to be able to read reviews left by other users."
 
-On the "Reviews" page any user can read the previous reviews left.
+**On the "Reviews" page any user can read the previous reviews left.**
 
 ![User Story Testing](readme-and-testing-images/user-story-test-3.png)
 
-* "I want to be able to delete or edit a review I have made."
+4. 
+    - "I want to be able to delete or edit a review I have made."
 
-Once signed in, a user can see an edit button on a review they have made. When they click edit they can change any of the information previously provided.
+**Once signed in, a user can see an edit button on a review they have made. When they click edit they can change any of the information previously provided.**
 
 ![User Story Testing](readme-and-testing-images/edit-function-one.png)
 ![User Story Testing](readme-and-testing-images/edit-function-two.png)
 
-* "I don't want other users to be able to edit or delete a review I have made."
+5. 
+    - "I don't want other users to be able to edit or delete a review I have made."
 
-As mentioned above, only when a user signs in do they get access to edit or delete. They may only edit or delete their own reviews.
+**As mentioned above, only when a user signs in do they get access to edit or delete. They may only edit or delete their own reviews.**
 
 ![User Story Testing](readme-and-testing-images/user-story-test-5.png)
 
-* "I want to be able to search for particular products."
+6. 
+    - "I want to be able to search for particular products."
 
-A search bar provides the option to search by keyword. If there is a result it will be shown, otherwise the below flash message is shown.
+**A search bar provides the option to search by keyword. If there is a result it will be shown, otherwise the below flash message is shown.**
 
 ![User Story Testing](readme-and-testing-images/user-story-test-6.png)
 ![User Story Testing](readme-and-testing-images/user-story-test-7.png)
@@ -109,14 +115,47 @@ A search bar provides the option to search by keyword. If there is a result it w
 
 ## Responsive Design
 
+**Browser Compatibility** 
+
 | Browser        | Google Chrome | Safari | Firefox | Microsoft Edge | Opera |
 |----------------|---------------|--------|---------|----------------|-------|
 | Responsiveness | Good          | Good   | Good    | Good           | Good  |
 | Appearance     | Good          | Good   | Good    | Good           | Good  |
 
+<br>
+
 **Things To Note**
 
 * On Safari and Firefox, the font is heavier within "Reviews" which makes it appear that the text colour is darker. On Firefox only, the colour palette of the navigation bar and the "Register" and "Log In" buttons, appears lighter.
+
+**Responsiveness** 
+
+* To test the below sizes, a combination of Google Chrome Developler Tools was used along with [Responsive Web Design Checker](https://www.responsivedesignchecker.com/)
+
+**Large Device Sizes**
+
+| Screen Size       | 1920 x 1080 | 1920 x 1200 | 1920 x 1080 | 1600 x 900 | 1440 x 900 |
+|----------------|---------------|--------|---------|----------------|-----
+| Renders As Expected | Yes | Yes  | Yes   | Yes  | Yes  |
+| Images    | Good          | Good   | Good    | Good           | Good  |
+
+<br>
+
+**Medium Device Sizes**
+
+| Screen Size       | 768 x 1024 | 1366 x 1024 | 600 x 960 | 1024 x 768 | 800 x 1280 |
+|----------------|---------------|--------|---------|----------------|-----
+| Renders As Expected | Yes | Yes   | Yes    | Yes | Yes |
+| Images    | Good          | Good   | Good    | Good           | Good  |
+
+<br>
+
+**Small Device Sizes**
+
+| Screen Size       | 320 x 568 | 414 x 736 | 360 x 640 | 411 x 731 | 280 x 653 |
+|----------------|---------------|--------|---------|----------------|-----
+| Renders As Expected | Yes | Yes   | Yes    | Yes | Yes |
+| Images    | Good          | Good   | Good    | Good           | Good  |
 
 ## Problems Encountered 
 
