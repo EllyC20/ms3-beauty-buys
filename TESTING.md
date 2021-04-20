@@ -15,6 +15,9 @@ To validate the HTML, the deployed URL for each page was tested. Listed below ar
 As seen below, errors occured due to two things. The use of "ID" on the review image caused an error, the validator was noting there were multiple elements with the same ID. To fix this I changed the ID to a class. Secondly, the use of a "p" tag within a span was incorrect and affecting the flow of the page. I removed the "p" tag and ensured the span held the same styling as I had intended, this solved the error.
 
 ![HTML validator](readme-and-testing-images/reviews-html-checker.png)
+
+<br>
+
 ![HTML validator](readme-and-testing-images/reviews-html-checker-2.png)
 
 **Log In**
@@ -51,7 +54,11 @@ To validate Python code, the code was copied and checked by direct input. No err
 
 ![Python validator](readme-and-testing-images/python-validator.png)
 
+<br>
+
 ## Database Testing 
+
+<br>
 
 ## Testing User Stories 
 
@@ -86,6 +93,9 @@ Below there are supporting images for each user story to demonstrate how that re
 **Once signed in, a user can see an edit button on a review they have made. When they click edit they can change any of the information previously provided.**
 
 ![User Story Testing](readme-and-testing-images/edit-function-one.png)
+
+<br>
+
 ![User Story Testing](readme-and-testing-images/edit-function-two.png)
 
 5. 
@@ -98,20 +108,39 @@ Below there are supporting images for each user story to demonstrate how that re
 6. 
     - "I want to be able to search for particular products."
 
-**A search bar provides the option to search by keyword. If there is a result it will be shown, otherwise the below flash message is shown.**
+**A search bar provides the option to search by keyword. If there is a result it will be shown, otherwise a flash message is shown.**
 
 ![User Story Testing](readme-and-testing-images/user-story-test-6.png)
-![User Story Testing](readme-and-testing-images/user-story-test-7.png)
+
+<br>
 
 **As a Site Owner**
 
-* I want to provide a way for users to register an account.
+1. 
+    - I want to provide a way for users to register an account.
 
-* I want the users to have an easy and clear way of submitting a product review. 
+![User Story Testing](readme-and-testing-images/user-story-test-1.png)
 
-* I want to provide a functionality where users can provide an image of the product being reviewed. 
+2.  
+    - I want the users to have an easy and clear way of submitting a product review. 
 
-* I want to have an admin account, this will ensure I can regulate reviews and remove any inappropiate content. 
+![User Story Testing](readme-and-testing-images/form-view-two.png)
+
+3. 
+    - I want to provide a functionality where users can provide an image of the product being reviewed. 
+
+![User Story Testing](readme-and-testing-images/site-owner-testing-1.png)
+
+4. 
+    - I want to have an admin account, this will ensure I can regulate reviews and remove any inappropiate content. 
+
+![User Story Testing](readme-and-testing-images/site-owner-testing-2.png)
+
+<br>
+
+![User Story Testing](readme-and-testing-images/site-owner-testing-3.png)
+
+<br>
 
 ## Responsive Design
 
@@ -127,6 +156,8 @@ Below there are supporting images for each user story to demonstrate how that re
 **Things To Note**
 
 * On Safari and Firefox, the font is heavier within "Reviews" which makes it appear that the text colour is darker. On Firefox only, the colour palette of the navigation bar and the "Register" and "Log In" buttons, appears lighter.
+
+<br>
 
 **Responsiveness** 
 
@@ -156,6 +187,8 @@ Below there are supporting images for each user story to demonstrate how that re
 |----------------|---------------|--------|---------|----------------|-----
 | Renders As Expected | Yes | Yes   | Yes    | Yes | Yes |
 | Images    | Good          | Good   | Good    | Good           | Good  |
+
+<br>
 
 ## Problems Encountered 
 
