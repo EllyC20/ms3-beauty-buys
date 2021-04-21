@@ -1,3 +1,4 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
@@ -23,20 +24,9 @@ nav .brand-logo {
     padding-left: 15px;
 }
 
-nav a {
-    color: #000000;
-}
-
+nav a,
 nav a:hover {
     color: #000000;
-}
-
-/* To ensure brand logo doesn't break out of alignment on smaller screen sizes */ 
-@media screen and (min-width:200px) and (max-width:375px){
-  nav .brand-logo { 
-      font-size: 22px;
-      padding-left: 0px;
-    }
 }
 
 /* Footer */
@@ -88,12 +78,9 @@ footer {
     background-color: #f8edeb;
 }
 
-.carousel .indicators .indicator-item {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
+.carousel .indicators .indicator-item,
 .carousel .indicators .indicator-item.active {
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home-text {
@@ -108,18 +95,15 @@ h1 {
     font-size: 40px;
 }
 
-/* To ensure text doesn't look too large on smaller devices. */ 
-@media screen and (max-width: 425px){
-  h1 { 
-      font-size: 30px;
-    }
-}
-
 .helper-text {
     font-size: 10px;
 }
 
 /* Buttons */
+.btn-small {
+    color: #000000;
+}
+
 .edit-btn,
 .submit-btn {
     background-color: #b08968;
@@ -178,3 +162,35 @@ h1 {
     color: #ff7096;
     letter-spacing: 1px;
 }
+
+/* General */ 
+.input-field .prefix {
+    font-size: 20px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Media Queries */ 
+@media screen and (max-width: 425px) {
+    .margin-btn {
+        margin: 5px;
+    }
+}
+
+/* To ensure text doesn't look too large on smaller devices. */ 
+@media screen and (max-width: 425px){
+    h1 { 
+        font-size: 30px;
+      }
+  }
+
+/* To ensure brand logo doesn't break out of alignment on smaller screen sizes */ 
+@media screen and (min-width:200px) and (max-width:375px){
+    nav .brand-logo { 
+        font-size: 22px;
+        padding-left: 0px;
+      }
+  }
