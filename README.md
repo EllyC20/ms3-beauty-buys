@@ -334,40 +334,40 @@ All testing detail can be found [here.](TESTING.md)
     1. 'product_category'
     2. 'reviews'
     3. 'users'
-  - Then set up the collections as follows: 
-    - For 'product_category'
-  > <code>
-      _id: ObjectId()
-      category_name: "Facial Skincare"
+* **Then set up the collections as follows:**
+  **For 'product_category'**
+    > <code>
+        _id: ObjectId()
+        category_name: "Facial Skincare"
 
-      _id: ObjectId()
-      category_name: "Haircare"
+        _id: ObjectId()
+        category_name: "Haircare"
 
-      _id: ObjectId()
-      category_name: "Make Up"
+        _id: ObjectId()
+        category_name: "Make Up"
 
-      _id: ObjectId()
-      category_name: "Body Skincare"
-    </code>
-    - For 'reviews'
-> <code>
-    _id: ObjectId()
-    category_name: "string"
-    product_name: "string"
-    product_desc: "string"
-    review_detail: "string"
-    url_link: "string"
-    created_by: "string"
-  </code>
-    - For 'users'
-> <code>
-    _id: ObjectId()
-    username: "string"
-    password: "string"
-  </code>
+        _id: ObjectId()
+        category_name: "Body Skincare"
+      </code>
+  **For 'reviews'**
+    > <code>
+          _id: ObjectId()
+          category_name: "string"
+          product_name: "string"
+          product_desc: "string"
+          review_detail: "string"
+          url_link: "string"
+          created_by: "string"
+      </code>      
+  **For 'users'** 
+    > <code>
+        _id: ObjectId()
+        username: "string"
+        password: "string"
+      </code>
 
 * **Create Environmental Variables**
-  - Create an env.py file. Within this file, enter your environmental variables. Please note that values are to be replaced with your own as below.
+* Create an env.py file. Within this file, enter your environmental variables. Please note that values are to be replaced with your own as below.
   > <code> 
         import os
 
@@ -381,7 +381,7 @@ All testing detail can be found [here.](TESTING.md)
    <br>
 
 * **Create A gitignore file**
-  - Create a gitignore file and ensure the below items are included. 
+* Create a gitignore file and ensure the below items are included. 
   > <code>
       core.Microsoft*
       core.mongo*
