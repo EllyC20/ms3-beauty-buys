@@ -2,12 +2,11 @@
 
 ![Am I Responsive Image](readme-and-testing-images/am-i-responsive.png)
 
-Beauty Buys is a review site, where users can upload their own reviews of beauty products. Due to Covid-19 many people have had to tighten
-their purses, and pay closer attention to where their money is going. <br>
-By having a site where users can read about products before purchasing ensures money is not wasted on unsuitable products. 
-The aim is that a community of people with a common interest will be developed and people can have fun learning and reviewing.
+### Beauty Buys is a review site, where users can upload their own reviews of beauty products. Due to Covid-19 many people have had to tighten their purses, and pay closer attention to where their money is going. <br>
+### By having a site where users can read about products before purchasing ensures money is not wasted on unsuitable products. 
+### The aim is that a community of people with a common interest will be developed and people can have fun learning and reviewing.
 
-The live website can be viewed [here](https://beauty-buys.herokuapp.com/)
+#### The live website can be viewed [here](https://beauty-buys.herokuapp.com)
 
 <br>
 
@@ -143,7 +142,7 @@ These four options are what the user chooses from for "Category" when submitting
 
 **Font**
 
-* The two fonts included are "Kiwi Maru", a serif font and "Playfair Display" also a serif. 
+* The two fonts included are **"Kiwi Maru"**, a serif font and **"Playfair Display"** also a serif. 
 
 * "Kiwi Maru" can be seen in the brand name, any H1's and also within the card reveal of reviews. 
 
@@ -303,6 +302,96 @@ The main focus of this project is providing CRUD functionality while maintaining
 All testing detail can be found [here.](TESTING.md) 
 
 ## Deployment 
+
+### To Clone 
+
+* The project can be run locally by cloning or downloading.
+* Open the repositorie and click "Code", then select either "clone" or "download". 
+  ![Clone Image](readme-and-testing-images/clone-image.png)
+* If you choose to clone you will be provided with a URL. Copy the URL from the "Clone with HTTPS" section.
+* In your IDE, open Git Bash.
+* Type Git Clone and then paste the URL you copied.
+* Press enter and this will create the clone.
+* If you choose to download, you will be given a zip file which can be unzipped locally. 
+* These files can then be uploaded to your IDE. 
+
+### Local Copy 
+
+**Requirements**
+
+1. Python3 
+2. GitHub Account
+3. MongoDB
+
+* Install or set up the above requirements.
+* Go to the workspace of your local copy, in the CLI type <code>pip3 install -r requirements.txt</code>
+
+* **Create a database in MongoDB**
+  - Sign up for an account at [MongoDB](https://www.mongodb.com/2) or log in if you have an account.
+  - Create a cluster, choose the free tier option and then select the closest region to you.
+  - Create a database and name it beauty_buys.
+  - Create three collections named;
+    1. 'product_category'
+    2. 'reviews'
+    3. 'users'
+  - Then set up the collections as follows: 
+    - For 'product_category'
+  > <code>
+      _id: ObjectId()
+      category_name: "Facial Skincare"
+
+      _id: ObjectId()
+      category_name: "Haircare"
+
+      _id: ObjectId()
+      category_name: "Make Up"
+
+      _id: ObjectId()
+      category_name: "Body Skincare"
+    </code>
+    - For 'reviews'
+> <code>
+    _id: ObjectId()
+    category_name: "string"
+    product_name: "string"
+    product_desc: "string"
+    review_detail: "string"
+    url_link: "string"
+    created_by: "string"
+  </code>
+    - For 'users'
+> <code>
+    _id: ObjectId()
+    username: "string"
+    password: "string"
+  </code>
+
+* **Create Environmental Variables**
+  - Create an env.py file. Within this file, enter your environmental variables. Please note that values are to be replaced with your own as below.
+  > <code> 
+        import os
+
+        os.environ.setdefault("IP", "IP_ADDRESS") 
+        os.environ.setdefault("PORT", "PORT")
+        os.environ.setdefault("SECRET_KEY", "SECRET_KEY")
+        os.environ.setdefault("MONGO_URI", "MONGO_URI")
+        os.environ.setdefault("MONGO_DBNAME", "MONGO_DBNAME")
+   </code>
+
+   <br>
+
+* **Create A gitignore file**
+  - Create a gitignore file and ensure the below items are included. 
+  > <code>
+      core.Microsoft*
+      core.mongo*
+      core.python*
+      env.py
+      __pycache__/
+      *.py[cod]
+    </code>
+
+* To run locally, within the CLI type <code>python3 app.py</code>
 
 <br>
 
