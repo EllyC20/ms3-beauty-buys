@@ -336,7 +336,7 @@ All testing detail can be found [here.](TESTING.md)
     3. 'users'
 * **Then set up the collections as follows:**
   **For 'product_category'**
-    > <code>
+    > 
         _id: ObjectId()
         category_name: "Facial Skincare"
 
@@ -348,9 +348,9 @@ All testing detail can be found [here.](TESTING.md)
 
         _id: ObjectId()
         category_name: "Body Skincare"
-      </code>
+
   **For 'reviews'**
-    > <code>
+    > 
           _id: ObjectId()
           category_name: "string"
           product_name: "string"
@@ -358,17 +358,16 @@ All testing detail can be found [here.](TESTING.md)
           review_detail: "string"
           url_link: "string"
           created_by: "string"
-      </code>      
+
   **For 'users'** 
-    > <code>
+    > 
         _id: ObjectId()
         username: "string"
         password: "string"
-      </code>
 
 * **Create Environmental Variables**
-* Create an env.py file. Within this file, enter your environmental variables. Please note that values are to be replaced with your own as below.
-  > <code> 
+  - Create an env.py file. Within this file, enter your environmental variables. Please note that values are to be replaced with your own as below.
+  > 
         import os
 
         os.environ.setdefault("IP", "IP_ADDRESS") 
@@ -376,22 +375,18 @@ All testing detail can be found [here.](TESTING.md)
         os.environ.setdefault("SECRET_KEY", "SECRET_KEY")
         os.environ.setdefault("MONGO_URI", "MONGO_URI")
         os.environ.setdefault("MONGO_DBNAME", "MONGO_DBNAME")
-   </code>
-
-   <br>
 
 * **Create A gitignore file**
-* Create a gitignore file and ensure the below items are included. 
-  > <code>
+  - Ensure the below items are included. 
+  > 
       core.Microsoft*
       core.mongo*
       core.python*
       env.py
       __pycache__/
       *.py[cod]
-    </code>
 
-* To run locally, within the CLI type <code>python3 app.py</code>
+* To run locally, within the CLI type <code>python3 app.py</code> and select "run".
 
 <br>
 
