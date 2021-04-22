@@ -163,6 +163,11 @@ h1 {
     letter-spacing: 1px;
 }
 
+.card-row {
+    background-color: #f8edeb;
+    padding: 8px;
+}
+
 /* General */ 
 .input-field .prefix {
     font-size: 20px;

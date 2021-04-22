@@ -5,48 +5,51 @@
 <div class="container registration-img-div">
     <img src="/static/img/registration-img.png" alt="photo of community of people">
 </div>
-<form class="col s12" method="POST" action="{{ url_for('register') }}">
-    <div class="card-panel">
-        <!-- Username-->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-user-plus prefix"></i>
-                <!-- onvalid: to show user a more descriptive message about format required. -->
-                <input id="username" name="username" type="text" minlength="5"
-                 maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" 
-                 oninvalid="this.setCustomValidity('Please Use Letters Or Numbers Only')"
-                 oninput="setCustomValidity('')" required>
-                <label for="username"> Username</label>
-                <p class="helper-text">Username must be 5 characters or more and contain only letters or numbers</p>
-            </div>
-        </div>
-        <!-- Password -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-user-lock prefix"></i>
-                <!-- onvalid: to show user a more descriptive message about format required. -->
-                <input id="password" name="password" type="password" minlength="5"
-                 maxlength="15" pattern="[a-zA-Z0-9]{5,15}$" class="validate"
-                 oninvalid="this.setCustomValidity('Please Use Letters Or Numbers Only')"
-                 oninput="setCustomValidity('')" required>
-                <label for="password">Password</label>
-                <p class="helper-text">Password must be 5 characters or more and contain only letters or numbers</p>
-            </div>
-        </div>
-        <!-- Register button-->
-        <div class="row">
-            <button type="submit" class="col s12 btn-small register-btn">
-                Register <i class="fas fa-sign-in-alt"></i>
-            </button>
+    <div class="row card-row">
+        <div class="col s12 m6 offset-m3">
+            <form method="POST" action="{{ url_for('register') }}">
+                <div class="card-panel">
+                    <!-- Username-->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-plus prefix"></i>
+                            <!-- onvalid: to show user a more descriptive message about format required. -->
+                            <input id="username" name="username" type="text" minlength="5"
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" 
+                            oninvalid="this.setCustomValidity('Please Use Letters Or Numbers Only')"
+                            oninput="setCustomValidity('')" required>
+                            <label for="username"> Username</label>
+                            <p class="helper-text">Username must be 5 characters or more and contain only letters or numbers</p>
+                        </div>
+                    </div>
+                    <!-- Password -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-lock prefix"></i>
+                            <!-- onvalid: to show user a more descriptive message about format required. -->
+                            <input id="password" name="password" type="password" minlength="5"
+                            maxlength="15" pattern="[a-zA-Z0-9]{5,15}$" class="validate"
+                            oninvalid="this.setCustomValidity('Please Use Letters Or Numbers Only')"
+                            oninput="setCustomValidity('')" required>
+                            <label for="password">Password</label>
+                            <p class="helper-text">Password must be 5 characters or more and contain only letters or numbers</p>
+                        </div>
+                    </div>
+                    <!-- Register button-->
+                    <div class="row">
+                        <button type="submit" class="col s12 btn-small register-btn">
+                            Register <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-</form>
-
-<div class="row">
-    <div class="col s12">
-        <p class="center-align">Already Have An Account? Login <a href="{{url_for('login')}} "> Here </a></p>
+    <div class="row">
+        <div class="col s12">
+            <p class="center-align">Already Have An Account? Login <a href="{{url_for('login')}} "> Here </a></p>
+        </div>
     </div>
-</div>
 
 
 {% endblock %}
