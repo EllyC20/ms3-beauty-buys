@@ -173,6 +173,17 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Error Handlers */
+.error-h1 {
+    color: red;
+}
+
+.error-a:hover,
+.error-a {
+    color: black;
+    text-decoration: underline;
+}
+
 /* Media Queries */ 
 @media screen and (max-width: 425px) {
     .margin-btn {
