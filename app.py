@@ -83,6 +83,10 @@ def logout():
 
 @app.route("/new_review", methods=["GET", "POST"])
 def new_review():
+    # Only users can add reviews
+    if not session.get("user"):
+        return render_template("404.html")
+
     if request.method == "POST":
         review = {
             "category_name": request.form.get("category_name"),
@@ -102,6 +106,10 @@ def new_review():
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
+    # Only users can edit reviews
+    if not session.get("user"):
+        return render_template("404.html")
+
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
@@ -143,6 +151,10 @@ def get_reviews():
 
 @app.route("/manage_reviews")
 def manage_reviews():
+    # Only admin has access to manage reviews
+    if not session.get("user") == "admin":
+        return render_template("404.html")
+
     reviews = mongo.db.reviews.find()
     return render_template("manage_reviews.html", reviews=reviews)
 
