@@ -328,7 +328,7 @@ All testing detail can be found [here.](TESTING.md)
 
 * **Create a database in MongoDB**
   - Sign up for an account at [MongoDB](https://www.mongodb.com/2) or log in if you have an account.
-  - Create a cluster, choose the free tier option and then select the closest region to you.
+  - Create a cluster, choose the free tier option.
   - Create a database and name it beauty_buys.
   - Create three collections named;
     1. 'product_category'
@@ -387,6 +387,28 @@ All testing detail can be found [here.](TESTING.md)
       *.py[cod]
 
 * To run locally, within the CLI type <code>python3 app.py</code> and select "run".
+
+### Heroku Deployment 
+
+**Prior to running Heroku, set up your workspace.**
+
+* To do this, create a **requirements.txt** file to store the project dependencies. In the CLI type <code>pip freeze --local > requirements.txt</code>
+
+* Create a **Procfile**, this is so Heroku knows which file is the entry point. In the CLI type <code>python app.py > Procfile</code>
+
+* Vist [Heroku](https://id.heroku.com/login) and create a free account.
+
+* From the dashboard click the "new" button and create a new app. Name your app and select your region.
+
+* For GitHub deployment, go to the "deploy" section within Heroku.
+  - Search your repositorie name, when it is found click "connect".
+
+* In the "settings", choose "config vars". Click on "Reveal config vars" then enter the variables contained in your **env.py** file.
+  - These include "IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME".
+
+* In the "deploy" section, scroll down to "automatic deployments" choose "enable automatic deploys" and then click "deploy branch".
+
+* Finally click "open app" and the app will be launched. 
 
 <br>
 
