@@ -44,6 +44,7 @@ def register():
         # Put the new user into a session cookie
         session["user"] = request.form.get("username").lower()
         flash("Your Registration Was Successful!")
+        return redirect(url_for("get_profile", username=session["user"]))
     return render_template("register.html")
 
 
@@ -60,7 +61,7 @@ def login():
                existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
-                return redirect(url_for("get_reviews",
+                return redirect(url_for("get_profile",
                                 username=session["user"]))
             else:
                 # Wrong password
@@ -141,6 +142,13 @@ def search():
     query = request.form.get("query")
     reviews = mongo.db.reviews.find({"$text": {"$search": query}})
     return render_template("reviews.html", reviews=reviews)
+
+
+@app.route("/get_profile")
+def get_profile():
+    if not session.get("user"):
+        return render_template("404.html")
+    return render_template("profile.html")
 
 
 @app.route("/get_reviews")
