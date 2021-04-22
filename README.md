@@ -1,6 +1,6 @@
 # Beauty Buys
 
-![Am I Responsive Image](readme-and-testing-images/am-i-responsive.png)
+![Am I Responsive Image](static/testing/am-i-responsive.png)
 
 ### Beauty Buys is a review site, where users can upload their own reviews of beauty products. Due to Covid-19 many people have had to tighten their purses, and pay closer attention to where their money is going. <br>
 ### By having a site where users can read about products before purchasing ensures money is not wasted on unsuitable products. 
@@ -57,7 +57,7 @@ Table Of Contents Here.
 
 **As A New User (Not Logged In)**
 
-![Structure of a user not logged in](readme-and-testing-images/not-logged-in-user.jpeg)
+![Structure of a user not logged in](static/testing/not-logged-in-user.jpeg)
 
 * A user who is not logged in, can reach four pages;
 * Home / Index
@@ -67,7 +67,7 @@ Table Of Contents Here.
 
 **As A Registered User (Logged In)** 
 
-![Structure of a user who is logged in](readme-and-testing-images/logged-in-user.jpeg)
+![Structure of a user who is logged in](static/testing/logged-in-user.jpeg)
 
 * A user who is logged in, can reach four pages;
 * Home / Index 
@@ -86,7 +86,7 @@ Table Of Contents Here.
 
 **Database Schema** 
 
-![Structure of Database in MongoDB](readme-and-testing-images/db-schema.jpeg)
+![Structure of Database in MongoDB](static/testing/db-schema.jpeg)
 
 The Database is outlined as above. The database is named "Beauty Buys". 
 
@@ -105,17 +105,17 @@ The Database is outlined as above. The database is named "Beauty Buys".
  
 These four options are what the user chooses from for "Category" when submitting a new review. This can be seen in the images below. 
 
-![Structure of product_category](readme-and-testing-images/form-view-one.png)
-![Structure of product_category](readme-and-testing-images/form-view-two.png)
+![Structure of product_category](static/testing/form-view-one.png)
+![Structure of product_category](static/testing/form-view-two.png)
 
 
 ### 4.Skeleton
 
- **Desktop wireframes can be viewed [here](wireframes/desktop-wireframes)**
+ **Desktop wireframes can be viewed [here](static/wireframes/desktop-wireframes)**
 
- **Mobile wireframes can be viewed [here](wireframes/mobile-wireframes)** 
+ **Mobile wireframes can be viewed [here](static/wireframes/mobile-wireframes)** 
 
- **Tablet or medium device sizes can be viewed [here](wireframes/tablet-wireframes)**
+ **Tablet or medium device sizes can be viewed [here](static/wireframes/tablet-wireframes)**
 
  **When viewing the wireframes there are some changes that should be noted, they are detailed below.**
  
@@ -132,7 +132,7 @@ These four options are what the user chooses from for "Category" when submitting
 
 **Colours**
 
-![Colour scheme](readme-and-testing-images/ms3-color.png)
+![Colour scheme](static/testing/ms3-color.png)
 
 * The user sees the soft pink hue of the Home Page upon visiting the site. The pink was chosen to complement the main home image. The colour is gentle and doesn't detract from the aim of the site. 
 
@@ -168,7 +168,7 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 **The user has the ability to complete a form to create a record in the database. In this case, the record created is a review and the user fills in appropiate information relating to a product of their choice.**
 
-![Create](readme-and-testing-images/form-view-two.png) 
+![Create](static/testing/form-view-two.png) 
 
 <br>
 
@@ -176,7 +176,7 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 **The user can visit the "Reviews" page and read all reviews made, both by themselves and others.**
 
-![Read](readme-and-testing-images/read-function.png) 
+![Read](static/testing/read-function.png) 
 
 <br>
 
@@ -184,19 +184,19 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 - **Once the user has uploaded a review, they will be able to see two buttons on their own reviews. These two buttons are "Edit" and "Delete. The "Edit" button, provides the update functionality.**
 
-![Edit](readme-and-testing-images/edit-function-one.png)
+![Edit](static/testing/edit-function-one.png)
 
 - **When the user chooses "Edit" they will be shown the following form which will allow them to update the data held in the database. They will be shown the data they've previously provided and they can update this as they wish.**
 
-![Edit](readme-and-testing-images/edit-function-two.png)
+![Edit](static/testing/edit-function-two.png)
 
 - **Updated review detail:** 
 
-![Edit](readme-and-testing-images/edit-function-three.png)
+![Edit](static/testing/edit-function-three.png)
 
 - **The user is then shown a flash message confirming the updating of the review.**
 
-![Edit](readme-and-testing-images/edit-function-four.png) 
+![Edit](static/testing/edit-function-four.png) 
 
 <br>
 
@@ -204,15 +204,15 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 - **As mentioned above, the user who has created the review can view an "Edit" button and a "Delete" button.** 
 
-![Delete](readme-and-testing-images/edit-function-one.png)
+![Delete](static/testing/edit-function-one.png)
 
 - **When the user chooses "Delete" they will be prompted to confirm that this is what they wish to do.**
 
-![Delete](readme-and-testing-images/delete-function-one.png)
+![Delete](static/testing/delete-function-one.png)
 
 - **If the user chooses "Cancel" from this modal, they will simply be returned to the "Reviews" page. If they choose "Delete" their review will be deleted from the database and they will be shown a confirmation flash message of this.**
 
-![Delete](readme-and-testing-images/delete-function-two.png) 
+![Delete](static/testing/delete-function-two.png) 
 
 <br>
 
@@ -307,7 +307,7 @@ All testing detail can be found [here.](TESTING.md)
 
 * The project can be run locally by cloning or downloading.
 * Open the repositorie and click "Code", then select either "clone" or "download". 
-  ![Clone Image](readme-and-testing-images/clone-image.png)
+  ![Clone Image](static/testing/clone-image.png)
 * If you choose to clone you will be provided with a URL. Copy the URL from the "Clone with HTTPS" section.
 * In your IDE, open Git Bash.
 * Type Git Clone and then paste the URL you copied.

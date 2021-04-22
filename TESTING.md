@@ -8,51 +8,51 @@ To validate the HTML, the deployed URL for each page was tested. Listed below ar
 
 **Home**
 
-![HTML validator](readme-and-testing-images/html-validator.png)
+![HTML validator](static/testing/html-validator.png)
 
 **Reviews** 
 
 As seen below, errors occured due to two things. The use of "ID" on the review image caused an error, the validator was noting there were multiple elements with the same ID. To fix this I changed the ID to a class. Secondly, the use of a "p" tag within a span was incorrect and affecting the flow of the page. I removed the "p" tag and ensured the span held the same styling as I had intended, this solved the error.
 
-![HTML validator](readme-and-testing-images/reviews-html-checker.png)
+![HTML validator](static/testing/reviews-html-checker.png)
 
 <br>
 
-![HTML validator](readme-and-testing-images/reviews-html-checker-2.png)
+![HTML validator](static/testing/reviews-html-checker-2.png)
 
 **Log In**
 
-![HTML validator](readme-and-testing-images/login-validator.png)
+![HTML validator](static/testing/login-validator.png)
 
 **Register**
 
-![HTML validator](readme-and-testing-images/register-validator.png)
+![HTML validator](static/testing/register-validator.png)
 
 **New Review**
 
-![HTML validator](readme-and-testing-images/new-review-validator.png)
+![HTML validator](static/testing/new-review-validator.png)
 
 **Edit Review**
 
-![HTML validator](readme-and-testing-images/edit-review-validator.png)
+![HTML validator](static/testing/edit-review-validator.png)
 
 **[CSS](https://jigsaw.w3.org/css-validator/)**
 
 To validate CSS, the CSS code was copied and checked using direct input. This didn't result in any errors. 
 
-![CSS validator](readme-and-testing-images/css-validator.png)
+![CSS validator](static/testing/css-validator.png)
 
 **[JavaScript](https://jshint.com/)**
 
 To validate JavaScript, the code was copied and checked using direct input. This didn't result in any errors.
 
-![Js validator](readme-and-testing-images/js-validator.png)
+![Js validator](static/testing/js-validator.png)
 
 **[Python](https://extendsclass.com/python-tester.html)**
 
 To validate Python code, the code was copied and checked by direct input. No errors were found.
 
-![Python validator](readme-and-testing-images/python-validator.png)
+![Python validator](static/testing/python-validator.png)
 
 <br>
 
@@ -71,74 +71,82 @@ Below there are supporting images for each user story to demonstrate how that re
 
 **A user can register an account using the "Register" page.**
 
-![User Story Testing](readme-and-testing-images/user-story-test-1.png)
+![User Story Testing](static/testing/user-story-test-1.png)
 
 2. 
     - "I want to be able to upload a review for different product categories."
 
 **Within the "New Review" page, a user who has an account can submit the below form to submit a review.**
 
-![User Story Testing](readme-and-testing-images/form-view-two.png)
+![User Story Testing](static/testing/form-view-two.png)
 
 3. 
     - "I want to be able to read reviews left by other users."
 
 **On the "Reviews" page any user can read the previous reviews left.**
 
-![User Story Testing](readme-and-testing-images/user-story-test-3.png)
+![User Story Testing](static/testing/user-story-test-3.png)
 
 4. 
     - "I want to be able to delete or edit a review I have made."
 
 **Once signed in, a user can see an edit button on a review they have made. When they click edit they can change any of the information previously provided.**
 
-![User Story Testing](readme-and-testing-images/edit-function-one.png)
+![User Story Testing](static/testing/edit-function-one.png)
 
 <br>
 
-![User Story Testing](readme-and-testing-images/edit-function-two.png)
+![User Story Testing](static/testing/edit-function-two.png)
 
 5. 
     - "I don't want other users to be able to edit or delete a review I have made."
 
 **As mentioned above, only when a user signs in do they get access to edit or delete. They may only edit or delete their own reviews.**
 
-![User Story Testing](readme-and-testing-images/user-story-test-5.png)
+![User Story Testing](static/testing/user-story-test-5.png)
 
 6. 
     - "I want to be able to search for particular products."
 
 **A search bar provides the option to search by keyword. If there is a result it will be shown, otherwise a flash message is shown.**
 
-![User Story Testing](readme-and-testing-images/user-story-test-6.png)
+![User Story Testing](static/testing/user-story-test-6.png)
 
 <br>
 
 **As a Site Owner**
 
 1. 
-    - I want to provide a way for users to register an account.
+    - "I want to provide a way for users to register an account."
 
-![User Story Testing](readme-and-testing-images/user-story-test-1.png)
+**The "Registration" page provides this function**
+
+![User Story Testing](static/testing/user-story-test-1.png)
 
 2.  
-    - I want the users to have an easy and clear way of submitting a product review. 
+    - "I want the users to have an easy and clear way of submitting a product review."
 
-![User Story Testing](readme-and-testing-images/form-view-two.png)
+**The form is simple and explains what information is expected.**
+
+![User Story Testing](static/testing/form-view-two.png)
 
 3. 
-    - I want to provide a functionality where users can provide an image of the product being reviewed. 
+    - "I want to provide a functionality where users can provide an image of the product being reviewed."
 
-![User Story Testing](readme-and-testing-images/site-owner-testing-1.png)
+**Within the form, there's an input section which allows the user to upload a URL link**
+
+![User Story Testing](static/testing/site-owner-testing-1.png)
 
 4. 
-    - I want to have an admin account, this will ensure I can regulate reviews and remove any inappropiate content. 
+    - "I want to have an admin account, this will ensure I can regulate reviews and remove any inappropiate content." 
 
-![User Story Testing](readme-and-testing-images/site-owner-testing-2.png)
+**There's an admin account which has access to all reviews. The navigation menu option "Manage Reviews" shows only for the admin user, the admin can then visit this page and edit or delete reviews.**
+
+![User Story Testing](static/testing/site-owner-testing-2.png)
 
 <br>
 
-![User Story Testing](readme-and-testing-images/site-owner-testing-3.png)
+![User Story Testing](static/testing/site-owner-testing-3.png)
 
 <br>
 
