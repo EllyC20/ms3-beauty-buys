@@ -58,7 +58,13 @@ To validate Python code, the code was copied and checked by direct input. No err
 
 ## Database Testing 
 
+Database testing here. 
+
 <br>
+
+## Defensive Design Testing
+
+Detail of form validation, URL input, password, username checks here. 
 
 ## Testing User Stories 
 
@@ -197,6 +203,10 @@ Below there are supporting images for each user story to demonstrate how that re
 | Images    | Good          | Good   | Good    | Good           | Good  |
 
 <br>
+
+* Testing of all features, nav, footer, links, search function, all pages to be tested here. 
+
+* Lighthouse summary of testing here.
 
 ## Problems Encountered 
 
