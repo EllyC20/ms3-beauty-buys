@@ -1,11 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                
-                <h1 class="center-align">Find Your Reviews Below</h1>
-            </div>
+    <h1 class="center-align">Find Your Reviews Below</h1>
+        <div class="row center-align">
+            {% for review in user_reviews %}
+                <div class="col s12 m6 l4 center-align">
+                    <!-- CREDIT: Card layout utilised from https://materializecss.com/cards.html and customised for this project. -->
+                    <div class="card medium">
+                        <!-- Image section -->
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator review-image" src="{{ review.url_link }}" alt="image of product being reviewed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 review-p">
+                                    {{ review.product_name }}
+                                    <i class="fas fa-arrow-down right"></i>
+                            </span>
+                        </div>
+                        <!-- Review card reveal -->
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4 review-p">{{ review.product_name }}<i
+                                    class="fas fa-arrow-up right"></i>
+                            </span>
+                            <p class="center-align review-p">
+                                Category: <span class="span-review">{{ review.category_name }}</span><br>
+                                Product Description: <span class="span-review">{{ review.product_desc }}</span><br>
+                                Review Detail: <span class="span-review">{{ review.review_detail }}</span><br>
+                                Created By: <span class="span-review">{{ review.created_by }}</span><br>
+                            </p>
+                        </div>
+                        <!-- Edit and delete buttons -->
+                        <div class="col s12">
+                                {% if session.user|lower == review.created_by|lower %}
+                                <button class="modal-trigger btn-small delete-btn" href="#modal{{ loop.index }}">Delete</button>
+                                <!-- Credit: Materialize used to implement modal, modified for project -->
+                                <!-- Prompt before deletion -->
+                                <div id="modal{{ loop.index }}" class="modal">
+                                    <div class="modal-content center-align">
+                                        <p class="review-p">Are you sure you want to delete your {{ review.product_name }} review?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#" class="modal-close btn-small edit-btn">Cancel</a>
+                                        <a href="{{ url_for('delete_review', review_id=review._id)}}" class="btn-small delete-btn">Delete</a>
+                                    </div>
+                                </div>
+                                    <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn-small edit-btn">Edit</a>
+                                {% endif %}
+                        </div>
+                        <!-- End Credit -->
+                    </div>
+                </div>
+            {% endfor %}
         </div>
-    </div>
 {% endblock %}

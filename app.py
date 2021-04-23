@@ -144,11 +144,20 @@ def search():
     return render_template("reviews.html", reviews=reviews)
 
 
-@app.route("/get_profile")
-def get_profile():
+@app.route("/get_profile/<username>", methods=["GET", "POST"])
+def get_profile(username):
+    # Only users can access profile
     if not session.get("user"):
         return render_template("404.html")
-    return render_template("profile.html")
+    
+    username = mongo.db.users.find_one(
+        {"username": session["user"]}) ["username"]
+    
+    if session["user"]:
+        user_reviews = list(
+            mongo.db.reviews.find({"created_by": session["user"]}))
+    return render_template(
+        "profile.html", username=username, user_reviews=user_reviews)
 
 
 @app.route("/get_reviews")
