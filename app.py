@@ -2,6 +2,7 @@ import os
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
+from flask_paginate import Pagination, get_page_args
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -16,6 +17,30 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
+# Pagination
+# Credit: https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9
+
+reviews = mongo.db.reviews.find()
+
+PER_PAGE = 6
+
+
+def paginated(reviews):
+    page, per_page, offset = get_page_args(
+        page_parameter='page', per_page_parameter='per_page')
+    offset = page * PER_PAGE - PER_PAGE
+
+    return reviews[offset: offset + PER_PAGE]
+
+
+def pagination_args(reviews):
+    page, per_page, offset = get_page_args(
+        page_parameter='page', per_page_parameter='per_page')
+    total = reviews.count()
+
+    return Pagination(page=page, per_page=PER_PAGE, total=total)
+# End Credit
 
 
 @app.route("/")
@@ -163,7 +188,11 @@ def get_profile(username):
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.reviews.find()
-    return render_template("reviews.html", reviews=reviews)
+    reviews_paginated = paginated(reviews)
+    pagination = pagination_args(reviews)
+    return render_template("reviews.html",
+                           reviews=reviews_paginated,
+                           pagination=pagination)
 
 
 @app.route("/manage_reviews")

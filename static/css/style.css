@@ -168,6 +168,10 @@ h1 {
     padding: 8px;
 }
 
+div.pagination {
+    text-align: center;
+}
+
 /* General */ 
 .input-field .prefix {
     font-size: 20px;
