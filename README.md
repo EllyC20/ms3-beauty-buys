@@ -57,27 +57,28 @@ Table Of Contents Here.
 
 **As A New User (Not Logged In)**
 
-![Structure of a user not logged in](static/testing/not-logged-in-user.jpeg)
-
 * A user who is not logged in, can reach four pages;
-* Home / Index
-* Reviews - Cannot upload a review.
-* Register 
-* Log In 
+  - Home / Index
+  - Reviews 
+  - Register 
+  - Log In 
+
+![Structure of a user not logged in](static/testing/not-logged-in-user.jpeg)
 
 **As A Registered User (Logged In)** 
 
-![Structure of a user who is logged in](static/testing/logged-in-user.jpeg)
+* A user who is logged in, can reach five pages;
+  - Home / Index 
+  - Profile
+  - Reviews 
+  - New Review 
+  - Log Out
 
-* A user who is logged in, can reach four pages;
-* Home / Index 
-* Reviews - Can edit or delete own reviews.
-* Edit Review 
-* Log Out
+![Structure of a user who is logged in](static/testing/logged-in-user.jpeg)
 
 **As Admin (Site Owner)**
 
-* Admin has access to all pages and an extra page named "Manage Reviews". The Admin can edit or delete any review made on the site. The purpose of the account is to manage and maintain all reviews, if any inappropiate reviews are made the Admin user can easily delete or modify as they wish. 
+* Admin has access to all pages and a 6th page named **"Manage Reviews"**. The Admin can edit or delete any review made on the site. The purpose of the account is to manage and maintain all reviews, if any inappropiate reviews are made the Admin user can easily delete or modify as they wish. 
 
 **For All Users**
 
