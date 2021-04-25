@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+
     <h1 class="center-align">For Admin - Manage Reviews</h1>
     <!-- Search function -->
         <div class="row card-panel">
@@ -16,7 +17,6 @@
                 </div>
             </form>
         </div>
-
     <!-- Review display -->
     {% if reviews.count() > 0 %}
     <div class="row center-align">
@@ -65,4 +65,5 @@
         {% endfor %}
     {% endif %}
     </div>
+
 {% endblock %}
