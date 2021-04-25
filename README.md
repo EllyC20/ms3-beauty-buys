@@ -12,11 +12,28 @@
 
 ## Table Of Contents 
 
-Table Of Contents Here.
+- <a href="#ux">UX</a>
+  - <a href="#user-stories">User Stories</a>
+  - <a href="#strategy">Strategy</a>
+  - <a href="#scope">Scope</a>
+  - <a href="#structure">Structure</a>
+- <a href="#database">Database Schema</a>
+- <a href="#wireframes">Wireframes</a>
+- <a href="#surface">Surface</a>
+- <a href="#crud">CRUD</a>
+- <a href="#features">Features</a>
+- <a href="#languages">Languages</a>
+- <a href="#testing">Testing</a>
+- <a href="#deployment">Deployment</a>
+- <a href="#credits">Credits</a>
 
 <br>
 
+<span id="ux"></span>
+
 ## UX 
+
+<span id="user-stories"></span>
 
 ### User Stories 
 
@@ -40,11 +57,15 @@ Table Of Contents Here.
 
 * I want to be able to easily sign into my account and see my own reviews.
 
+<span id="strategy"></span>
+
 ### 1.Strategy 
 
 **Project Purpose**
 
 * This project is intended to allow people to review products, learn about new products and share a common interest. 
+
+<span id="scope"></span>
 
 ### 2.Scope
 
@@ -52,6 +73,8 @@ Table Of Contents Here.
 * The interface should be appealing, subtle and not too busy with features or design.
 * The user should not feel that the uploading of a review is too difficult as they may then leave the site.
 * All information regarding reviews should be easily accessible and the user should not find it hard to reach this information.
+
+<span id="structure"></span>
 
 ### 3.Structure
 
@@ -85,6 +108,8 @@ Table Of Contents Here.
 * The Navbar provides access to these pages on all devices. This Navbar collapses to a Side Navbar on mobile devices.
 * The Footer contains Social Media links which the site owner can use to link to their accounts.
 
+<span id="database"></span>
+
 **Database Schema** 
 
 ![Structure of Database in MongoDB](static/testing/db-schema.jpeg)
@@ -109,6 +134,19 @@ These four options are what the user chooses from for "Category" when submitting
 ![Structure of product_category](static/testing/form-view-one.png)
 ![Structure of product_category](static/testing/form-view-two.png)
 
+**"reviews" contains the details uploaded by the user from "New Review"**
+
+1. "category_name"
+2. "product_name"
+3. "product_desc"
+4. "review_detail"
+5. "url_link"
+
+**Six isn't filled in by the user, this information is providing by performing checks on the database**
+
+6. "created_by"
+
+<span id="wireframes"></span>
 
 ### 4.Skeleton
 
@@ -128,6 +166,7 @@ These four options are what the user chooses from for "Category" when submitting
 
  * The implementation of both the Register and Login pages differed, the image to the top of the page felt more appropiate and followed conventional design along with the layout of the rest of the site.
 
+<span id="surface"></span>
 
 ### 5.Surface
 
@@ -160,6 +199,8 @@ These four options are what the user chooses from for "Category" when submitting
 <br>
 
 ## Features 
+
+<span id="crud"></span>
 
 ### CRUD 
 
@@ -217,6 +258,8 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 <br>
 
+<span id="features"></span>
+
 ### Current Features 
 
 * A fixed Navbar, that collapses on medium devices and below to a hamburger menu. The mobile navbar features a "Home" option as on extremely small device sizes, the user faced difficulty in clicking to the side of the menu to collapse it again. 
@@ -245,6 +288,8 @@ The main focus of this project is providing CRUD functionality while maintaining
 * The site could be developed to the point of being a mobile app, providing ease of use and accessibility. 
 
 <br>
+
+<span id="languages"></span>
 
 ## Languages Used 
 
@@ -298,9 +343,13 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 <br>
 
+<span id="testing"></span>
+
 ## Testing 
 
 All testing detail can be found [here.](TESTING.md) 
+
+<span id="deployment"></span>
 
 ## Deployment 
 
@@ -412,6 +461,8 @@ All testing detail can be found [here.](TESTING.md)
 * Finally click "open app" and the app will be launched. 
 
 <br>
+
+<span id="credits"></span>
 
 ## Credits 
 
