@@ -48,17 +48,21 @@ To validate JavaScript, the code was copied and checked using direct input. This
 
 ![Js validator](static/testing/js-validator.png)
 
-**[Python](https://extendsclass.com/python-tester.html)**
+**[Python](http://pep8online.com/checkresult)**
 
-To validate Python code, the code was copied and checked by direct input. No errors were found.
+To validate Python code, the code was copied and checked by direct input. One error was noted, which can be seen below. I fixed this line error and validated my code for a second time. No errors were noted on the second check.
 
-![Python validator](static/testing/python-validator.png)
+![Python validator](static/testing/pep-8-one.png)
+
+<br>
+
+![Python validator](static/testing/pep-8-two.png)
 
 <br>
 
 ## Database Testing 
 
-Database testing here. 
+ 
 
 <br>
 
@@ -208,9 +212,72 @@ Below there are supporting images for each user story to demonstrate how that re
 
 * Lighthouse summary of testing here.
 
+**Features Testing** 
+
+**Home Page**
+
+While testing the Home page I expect the following things to occur;
+
+* The navigation bar should collapse to a mobile side navbar at any screen size below 993 px. 
+    - This was tested using Google Chrome Dev Tools, an Iphone 8 and an Ipad Pro. These checks confirmed the expected behaviour. 
+
+* The carousel should on touch screen devices be "finger scrollable" and on desktop or devices without a touch screen function the user can click the image to scroll.
+    - This was tested on a Macbook Air, an Ipad Pro and an Iphone 8. These check confirmed the expected behaviour. 
+
+**Reviews**
+
+While testing the Reviews page I expect the following things to occur;
+
+* The search function should accept letters and numbers and not lone spaces. When a product is found from the keyword searched, it should be displayed. If there are no products matching the keyword search the user should be alerted to this. 
+    - This was tested by visiting the deployed site and attempting to search for a product, an error occured which is detailed in problems encountered. Once fixed, I searched again and got the expected results. 
+* There should be pagination at the bottom of the page displaying page numbers allowing the user to navigate easily. There should be six reviews per page. 
+    - This was tested by visiting the deployed site and visually inspecting this. A visual inspection confirmed pagination was there. I added 5 "testing" reviews to ensure pages would be added as the reviews increased and this behaviour was confirmed. 
+
+**Register**
+
+While testing the Register page I expect the following things to occur;
+
+* The user should be asked to provide a username and password. The username and password must match a pattern that accepts letters and numbers and no spaces.
+    - This was tested by visiting the deployed site and attempting to invalid usernames. I attempted to register a username with spaces only and this was not allowed.
+    - I attempted to register a password with spaces only and this was not allowed.
+    - I attempted to register a username and a password containing a space and this was not allowed.
+* After a successful registration the user should be directed to their new profile. 
+    - This was tested by registering an account on the deployed site and visually inspecting what happened. Once registered the user is taken to their profile with a flash message informing them their registration was successful. 
+* A user should not be able to register an account with a username that is already registered. A flash message is expected to inform the user that this username is already in use, and they should be redirected to the register page again.
+    - This was tested by visiting the deployed site and attempting to register with a username I already knew was in use. This confirmed the expected behaviour.
+
+**Log Out**
+
+While testing the Log Out function I expect the following things to occur;
+
+* The user once registered or logged in can click log out. Once they click log out I expect the user to be logged out and taken to the "Log In" page with a flash message informing them that they have logged out. 
+    - This was tested by visiting the deployed site, signing out and visually inspecting the resulting action. This confirmed the expected behaviour.
+
+**Log In**
+
+While testing the Log In page I expect the following things to occur;
+
+* The user should be asked to input their username and password. If they are successful they should be taken to their profile, or if their username or password is incorrect they should be informed of this and redirected to the log in page. 
+    - This was tested by visiting the deployed site and attempting to sign in with a correct username and incorrect password, this resulted in a flash message stating "Incorrect Username And/Or Password". 
+    - I then tried an incorrect username with a correct password, and recieved the same flash messsage. This is as expected, the user should not know if it is an incorrect username or password specifically at any point as this could lead to a security risk. 
+    - The testing confirmed the expected behaivour. 
+
+**Profile**
+
+While testing the Profile page I expect the following things to occur;
+
+* The user who is logged in should be shown their own reviews within their profile. The displayed reviews should have the option to edit or delete. 
+    - This was tested by visiting the deployed site, signing in and visually inspecting the results. This confirmed the expected behaviors.
+* By clicking the edit button the user should be taken to edit their review. 
+    - This was tested by visiting the deployed site, signing in and visually inspecting the results. This confirmed the expected behaviors.
+* By clicking the delete button the user should be asked do they want to delete the review. The user should be able to confirm or cancel the request. 
+    - This was tested by visiting the deployed site, signing in and visually inspecting the results. This confirmed the expected behaviors.
+
 ## Problems Encountered 
 
 * While testing my "Reviews" page on multiple devices I noted while using an Ipad Pro that the edit and delete buttons escaped their card
 container. To overcome this I used Google Chrome Developer Tools and inspected which element was causing this. I saw that that the card content had a predetermined padding, this was supplied by Materialize. I targeted the class within my CSS to fix the issue. 
 
 * When testing the site using Google Lighthouse, within accessibility it was noted that the images used in the "Home Page" carousel did not have alt attributes, I added this to improve accessibility.
+
+* When testing the search function of the review page I had not correctly implemented pagination within the search function. This resulted in an error when attempting to search for a product. The error was resolved by correctly updating the search function.
