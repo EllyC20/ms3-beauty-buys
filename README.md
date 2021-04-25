@@ -38,7 +38,7 @@ Table Of Contents Here.
 
 **As a Returning User**
 
-* I want to be able to easily sign into my account. 
+* I want to be able to easily sign into my account and see my own reviews.
 
 ### 1.Strategy 
 

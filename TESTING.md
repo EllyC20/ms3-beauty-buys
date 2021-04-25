@@ -158,6 +158,15 @@ Below there are supporting images for each user story to demonstrate how that re
 
 ![User Story Testing](static/testing/site-owner-testing-3.png)
 
+**As A Returning User**
+
+1. 
+    - "I want to be able to easily sign into my account and see my own reviews."
+
+**There is a simple design which ensures the user immediately knows where to go to log in. Upon visiting the Log In page and signing in, the user will be redirected to their profile. They will immediately see any reviews they have made. 
+
+![User Story Testing](static/testing/returning-user.png)
+
 <br>
 
 ## Responsive Design
@@ -208,11 +217,9 @@ Below there are supporting images for each user story to demonstrate how that re
 
 <br>
 
-* Testing of all features, nav, footer, links, search function, all pages to be tested here. 
-
-* Lighthouse summary of testing here.
-
 **Features Testing** 
+
+The testing of the **navigation bar** is applicable to all pages, as is the **footer**. 
 
 **Home Page**
 
@@ -221,8 +228,11 @@ While testing the Home page I expect the following things to occur;
 * The navigation bar should collapse to a mobile side navbar at any screen size below 993 px. 
     - This was tested using Google Chrome Dev Tools, an Iphone 8 and an Ipad Pro. These checks confirmed the expected behaviour. 
 
-* The carousel should on touch screen devices be "finger scrollable" and on desktop or devices without a touch screen function the user can click the image to scroll.
-    - This was tested on a Macbook Air, an Ipad Pro and an Iphone 8. These check confirmed the expected behaviour. 
+* The carousel should on touch screen devices be "finger scrollable". On desktop or devices without a touch screen function the user can click the image to scroll.
+    - This was tested on a Macbook Air, an Ipad Pro and an Iphone 8. These checks confirmed the expected behaviour. 
+
+* The footer should be visible and contain social media icons, clicking these should open a new tab with the relative social media website.
+    - To test this I visited the deployed site and clicked the icons. Upon doing this I noted that I had mistakenly put the Facebook URL with the YouTube icon and the Youtube URL with the Facebook icon. I fixed this by updating the URL's for both icons. I checked the results again and got the expected results.
 
 **Reviews**
 
@@ -232,13 +242,15 @@ While testing the Reviews page I expect the following things to occur;
     - This was tested by visiting the deployed site and attempting to search for a product, an error occured which is detailed in problems encountered. Once fixed, I searched again and got the expected results. 
 * There should be pagination at the bottom of the page displaying page numbers allowing the user to navigate easily. There should be six reviews per page. 
     - This was tested by visiting the deployed site and visually inspecting this. A visual inspection confirmed pagination was there. I added 5 "testing" reviews to ensure pages would be added as the reviews increased and this behaviour was confirmed. 
+* There should be cards to display the review content, these should be expandable and "reveal" information. The user should also be able to close them. 
+    - To test the Reviews page the deployed site was visited and I clicked the down arrow within the card to expand more. Upon doing this, the review information was revealed, to close the information I clicked the up arrow and the card collapsed. 
 
 **Register**
 
 While testing the Register page I expect the following things to occur;
 
 * The user should be asked to provide a username and password. The username and password must match a pattern that accepts letters and numbers and no spaces.
-    - This was tested by visiting the deployed site and attempting to invalid usernames. I attempted to register a username with spaces only and this was not allowed.
+    - This was tested by visiting the deployed site and attempting to input invalid usernames. I attempted to register a username with spaces only and this was not allowed.
     - I attempted to register a password with spaces only and this was not allowed.
     - I attempted to register a username and a password containing a space and this was not allowed.
 * After a successful registration the user should be directed to their new profile. 
@@ -257,7 +269,7 @@ While testing the Log Out function I expect the following things to occur;
 
 While testing the Log In page I expect the following things to occur;
 
-* The user should be asked to input their username and password. If they are successful they should be taken to their profile, or if their username or password is incorrect they should be informed of this and redirected to the log in page. 
+* The user should be asked to input their username and password. If they are successful they should be taken to their profile, or if their username or password is incorrect they should be informed of this and redirected to the Log In page. 
     - This was tested by visiting the deployed site and attempting to sign in with a correct username and incorrect password, this resulted in a flash message stating "Incorrect Username And/Or Password". 
     - I then tried an incorrect username with a correct password, and recieved the same flash messsage. This is as expected, the user should not know if it is an incorrect username or password specifically at any point as this could lead to a security risk. 
     - The testing confirmed the expected behaivour. 
@@ -273,6 +285,26 @@ While testing the Profile page I expect the following things to occur;
 * By clicking the delete button the user should be asked do they want to delete the review. The user should be able to confirm or cancel the request. 
     - This was tested by visiting the deployed site, signing in and visually inspecting the results. This confirmed the expected behaviors.
 
+**New Review**
+
+While testing the New Review page I expect the following things to occur;
+
+* A form to be available that allows the user to input specific information. Each section should be validated, required and only submit when all requirements are met. Once submitted this should then display on the reviews page and on the users profile. 
+    - This was tested by visiting the deployed site, signing in and submitting a new review. This confirmed the expected behaviors.
+
+**Manage Reviews - Admin Only**
+
+While testing the Manage Reviews page I expect the following things to occur;
+
+* The Manage Reviews navigation link should only be visible if the user signed in is the "admin" user. 
+    - This was tested by visting the deployed site and signing in using the admin account. This confimed the expected results. 
+* On the Manage Reviews page I expect as admin to be able to see all reviews and have the edit and delete buttons visible for all reviews.
+    - This was tested by visting the deployed site and signing in using the admin account. This confimed the expected results. 
+* When the edit button is chosen, Admin should be redirected to the "Edit Review" page.
+    - Testing was done by signing in as admin and selecting this option, this confirmed the expected results.
+* When the delete button is chosen, Admin should be prompted to confirm they wish to delete the review or be given the option to cancel. 
+    - Testing was done by signing in as admin and selecting this option, this confirmed the expected results.
+
 ## Problems Encountered 
 
 * While testing my "Reviews" page on multiple devices I noted while using an Ipad Pro that the edit and delete buttons escaped their card
@@ -281,3 +313,6 @@ container. To overcome this I used Google Chrome Developer Tools and inspected w
 * When testing the site using Google Lighthouse, within accessibility it was noted that the images used in the "Home Page" carousel did not have alt attributes, I added this to improve accessibility.
 
 * When testing the search function of the review page I had not correctly implemented pagination within the search function. This resulted in an error when attempting to search for a product. The error was resolved by correctly updating the search function.
+
+* Users were able to access pages they shouldn't have been able to once logged out. For example, the admin account is the only account that can visit the "Manage Categories" page. However, upon logging out if the user clicked the back button they would be returned to the "Manage Categories" page. This also occured for users who logged out and then pressed back, they could visit the "New Review" page and "Profile", both of which should not have been accessible.
+    - To fix this I implemented "if" statements into the python functions to perform checks, this ensures that if a user attempts to brute force onto a page they shouldn't have access to, they will be shown a 404 error page. 
