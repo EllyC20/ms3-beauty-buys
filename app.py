@@ -166,7 +166,11 @@ def delete_review(review_id):
 def search():
     query = request.form.get("query")
     reviews = mongo.db.reviews.find({"$text": {"$search": query}})
-    return render_template("reviews.html", reviews=reviews)
+    reviews_paginated = paginated(reviews)
+    pagination = pagination_args(reviews)
+    return render_template("reviews.html",
+                           reviews=reviews_paginated,
+                           pagination=pagination)
 
 
 @app.route("/get_profile/<username>", methods=["GET", "POST"])
@@ -174,10 +178,10 @@ def get_profile(username):
     # Only users can access profile
     if not session.get("user"):
         return render_template("404.html")
-    
+
     username = mongo.db.users.find_one(
-        {"username": session["user"]}) ["username"]
-    
+        {"username": session["user"]})["username"]
+
     if session["user"]:
         user_reviews = list(
             mongo.db.reviews.find({"created_by": session["user"]}))
@@ -209,3 +213,4 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)  # Must be false before submission.
+
