@@ -28,6 +28,10 @@ As seen below, errors occured due to two things. The use of "ID" on the review i
 
 ![HTML validator](static/testing/register-validator.png)
 
+**Profile**
+
+![HTML validator](static/testing/html-validator-profile.png)
+
 **New Review**
 
 ![HTML validator](static/testing/new-review-validator.png)
@@ -68,7 +72,12 @@ To validate Python code, the code was copied and checked by direct input. One er
 
 ## Defensive Design Testing
 
-Detail of form validation, URL input, password, username checks here. 
+* Users cannot brute force onto a page they should not be able to access. A custom 404 message is in place for if the user attempts to access a page they should not have access to.
+* Form validation within Register, Log In, New Review and Edit Review means that certain criteria must be met for the user to continue further. These patterns include not accepting lone spaces, that usernames and passwords must not have any spaces, the forms accept letters and numbers in some cases, along with commonly used punctuation in others. 
+* For the uploading of a review image, only URL's that start with http:// or https:// are accepted.
+* When logging in, if the user inputs an incorrect username or password they are not informed which one is incorrect. This is good pratice and helps protect the users account from potential security risks.
+* A user can't delete a review with one click, there is a modal in place to confirm the request made. If the user confirms, the review is then deleted.
+* Users cannot break the site by clicking buttons or external links, for example social media icons. All buttons are working as they should and provide the expected results.
 
 ## Testing User Stories 
 
