@@ -93,6 +93,7 @@ footer {
 h1 {
     font-family: 'Kiwi Maru', serif;
     font-size: 40px;
+    color: #000000;
 }
 
 .helper-text {
@@ -102,6 +103,11 @@ h1 {
 /* Buttons */
 .btn-small {
     color: #000000;
+}
+
+.href {
+    color: #000000;
+    text-decoration: underline;
 }
 
 .edit-btn,
@@ -117,12 +123,12 @@ h1 {
 
 .delete-btn,
 .cancel-btn {
-    background: #7f5539;
+    background: #a16d4a;
 }
 
 .delete-btn:hover,
 .cancel-btn:hover {
-    background-color: #7f5539;
+    background-color: #a16d4a;
     text-decoration: underline;
 }
 
@@ -170,6 +176,10 @@ h1 {
 
 div.pagination {
     text-align: center;
+}
+
+.input-field>label {
+    color: #000000;
 }
 
 /* General */ 
