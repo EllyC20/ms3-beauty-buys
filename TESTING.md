@@ -52,7 +52,7 @@ To validate JavaScript, the code was copied and checked using direct input. This
 
 ![Js validator](static/testing/js-validator.png)
 
-**[Python](http://pep8online.com/checkresult)**
+**[Python](http://pep8online.com/)**
 
 To validate Python code, the code was copied and checked by direct input. One error was noted, which can be seen below. I fixed this line error and validated my code for a second time. No errors were noted on the second check.
 
@@ -66,8 +66,16 @@ To validate Python code, the code was copied and checked by direct input. One er
 
 ## Database Testing 
 
+* When registering an account the username should be entered into the database and be visible. The password should also be entered but should be protected and not visible.
+    - This was tested by registering an account and visiting MongoDB to visually inspect the results. This confirmed the expected behaviour.
+* Once completed the "New Review" form, the information should enter the database and be saved within the appropiate collection. This review should then be displayed on the review page with the correct information.
+    - To test this, a review was completed on the "New Review" page. I then visited MongoDB and confirmed the data had been entered correctly. I then returned to the site to view the "Reviews" page and ensure the correct information was being displayed to users. 
+    This confirmed the expected results.
+* If a user chooses to edit a review, the user should be presented with a prepopulated form containing the information they previously submitted. Upon editing and confirming the edit, the data should alter within the database and within the "Reviews" page. 
+    - To test this, I clicked the edit button on a review I had made. I was shown a form containing the correct information that I had provided previously. Once I had completed the detail to be edited I confirmed this and visited the reviews page. This confirmed the data had been visually updated. I then checked within the database within MongoDB, this also confirmed the expected results.
+* If a user chooses to delete a review, they should be asked to confirm that they wish to proceed. If they confirm the review should be removed from both the database and the site.
+    - To test this I clicked the delete button on a review I had made. A modal popped up and I had to confirm I wished to proceed. Within this modal the question specifically asks if you wish to delete the review made of "x" product, where x is the product name. Once I confirmed, the review was removed from the site. I then visited MongoDB to ensure the data had been removed from the database, this confirmed the expected results.
  
-
 <br>
 
 ## Defensive Design Testing
