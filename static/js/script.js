@@ -1,3 +1,4 @@
+// Materialize initalization
 $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.carousel').carousel();
@@ -5,10 +6,10 @@ $(document).ready(function () {
     $('.modal').modal();
 });
 
+// Carousel initialization 
 $('.carousel').carousel({
     indicators: true
   });
-
 
 // Credit: Code from the Code Institute "Materialize Form Validation" lesson used to implement validation to drop down menu on "New Review" form.
 validateMaterializeSelect();
@@ -38,3 +39,12 @@ validateMaterializeSelect();
             }
         });
     }
+
+// Fixes known issue with Materialize drop down menus not working correctly with IOS
+// Credit: https://stackoverflow.com/questions/52850091/materialize-select-and-dropdown-touch-event-selecting-wrong-item/52851046#52851046
+
+$(document).click(function () {
+    $('li[id^="select-options"]').on('touchend', function (e) {
+        e.stopPropagation();
+    });
+});
