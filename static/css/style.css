@@ -228,3 +228,13 @@ html, body {
         padding-left: 0px;
       }
   }
+/* Add fixed navbar for smaller screen sizes */
+  @media screen and (max-width: 600px) {
+      nav {
+        position: fixed;
+      }
+
+      main {
+          padding-top: 55px;
+      }
+  }
