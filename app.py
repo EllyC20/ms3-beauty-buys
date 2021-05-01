@@ -159,6 +159,7 @@ def edit_review(review_id):
 
 
 @app.route("/delete_review/<review_id>")
+# Only users can delete reviews
 def delete_review(review_id):
     if not session.get("user"):
         return render_template("404.html")
@@ -187,12 +188,16 @@ def get_profile(username):
 
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
+    reviews_paginated = paginated(reviews)
+    pagination = pagination_args(reviews)
 
     if session["user"]:
         user_reviews = list(
             mongo.db.reviews.find({"created_by": session["user"]}))
-    return render_template(
-        "profile.html", username=username, user_reviews=user_reviews)
+    return render_template("profile.html", username=username,
+                           user_reviews=user_reviews,
+                           reviews=reviews_paginated,
+                           pagination=pagination)
 
 
 @app.route("/get_reviews")
