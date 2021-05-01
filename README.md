@@ -142,7 +142,7 @@ These four options are what the user chooses from for "Category" when submitting
 4. "review_detail"
 5. "url_link"
 
-**Six isn't filled in by the user, this information is providing by performing checks on the database**
+**Six isn't filled in by the user, this information is provided by performing checks on the database**
 
 6. "created_by"
 
@@ -262,7 +262,7 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 ### Current Features 
 
-* A fixed Navbar, that collapses on medium devices and below to a hamburger menu. The mobile navbar features a "Home" option as on extremely small device sizes, the user faced difficulty in clicking to the side of the menu to collapse it again. 
+* A Navbar, that collapses on medium devices and below to a hamburger menu. The mobile navbar features a "Home" option as on extremely small device sizes, the user faced difficulty in clicking to the side of the menu to collapse it again. 
 
 * A welcoming "Home Page", detailing the sites purpose and how to use it. The "Home Page" features a carousel of product images that encourage the user to visit the review page to find out about the products.
 
@@ -278,12 +278,13 @@ The main focus of this project is providing CRUD functionality while maintaining
 
 ### Feautures To Be Implemented
 
-* In the future a feature could be added where a user could use their smartphone camera to scan a products barcode to provide product name 
-  and details quickly, then they would only need to upload a reiew. 
+* In the future a feature could be added where a user could use their smartphone camera to scan a products barcode to provide product name and details quickly.
+
+* The option to reset password or delete account, I have not learnt the skills to implement this yet.
 
 * A community forum, where users could reach out to each other and discuss products.
 
-* An option to sign up for a newsletter, which would inform the user of new reviews added. 
+* An option to sign up for a newsletter, which would inform the user of new reviews added that may be of interest to them. 
 
 * The site could be developed to the point of being a mobile app, providing ease of use and accessibility. 
 
@@ -481,3 +482,6 @@ All testing detail can be found [here.](TESTING.md)
 ### Acknowledgements
 
 * To Code Institute who provided the lessons and mini project that guided this project. 
+* To my mentor Precious for his guidance and support.
+* To the Slack community for always being available and helpful.
+* Materialize for providing features to this project.
