@@ -19,7 +19,8 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 # Pagination
-# Credit: https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9
+'''Credit: https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9
+   and thread in Slack from other students.'''
 
 reviews = mongo.db.reviews.find()
 
@@ -40,6 +41,8 @@ def pagination_args(reviews):
     total = reviews.count()
 
     return Pagination(page=page, per_page=PER_PAGE, total=total)
+
+
 # End Credit
 
 
@@ -157,6 +160,9 @@ def edit_review(review_id):
 
 @app.route("/delete_review/<review_id>")
 def delete_review(review_id):
+    if not session.get("user"):
+        return render_template("404.html")
+
     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
     flash("Your Review Has Been Deleted")
     return redirect(url_for("get_reviews"))
@@ -213,4 +219,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)  # Must be false before submission.
-
