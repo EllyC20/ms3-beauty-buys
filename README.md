@@ -179,6 +179,7 @@ These four options are what the user chooses from for "Category" when submitting
 * The two neutral tones are shown on the "Reviews" and "Edit Review" pages. Neutral tones are subtle and allow the user to focus on the content. 
 
 * The forest green creates a very subtle difference, when the user hovers over the navigational links the green turns to the classic black. 
+  - **Comment Added 1st May. The above comments mentions forest green, however when testing this did not provide sufficient contrast so I altered the colour to be black at all times.**
 
 **Font**
 

@@ -48,7 +48,8 @@ To validate CSS, the CSS code was copied and checked using direct input. This di
 
 **[JavaScript](https://jshint.com/)**
 
-To validate JavaScript, the code was copied and checked using direct input. This didn't result in any errors.
+To validate JavaScript, the code was copied and checked using direct input. This didn't result in any errors. 
+    - **Comment added 1st May, a fix for Materialize drop down menu not working has been implemented since this testing. I copied the new code and tested it using Jshint as I did previously, this did not result in any errors.**
 
 ![Js validator](static/testing/js-validator.png)
 
