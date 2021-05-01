@@ -45,12 +45,13 @@ def pagination_args(reviews):
 
 # End Credit
 
-
 @app.route("/")
 @app.route("/index")
 def index():
     return render_template("index.html")
 
+
+# Register function
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -75,6 +76,8 @@ def register():
         return redirect(url_for("get_profile", username=session["user"]))
     return render_template("register.html")
 
+
+# Log In function
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -102,6 +105,8 @@ def login():
             return redirect(url_for("login"))
     return render_template("login.html")
 
+
+# Log Out function
 
 @app.route("/logout")
 def logout():
@@ -133,6 +138,8 @@ def new_review():
     return render_template("new_review.html", categories=categories)
 
 
+# Edit review function
+
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
     # Only users can edit reviews
@@ -158,6 +165,8 @@ def edit_review(review_id):
         "edit_review.html", review=review, categories=categories)
 
 
+# Delete review function
+
 @app.route("/delete_review/<review_id>")
 # Only users can delete reviews
 def delete_review(review_id):
@@ -169,6 +178,8 @@ def delete_review(review_id):
     return redirect(url_for("get_reviews"))
 
 
+# Search review function
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -179,6 +190,8 @@ def search():
                            reviews=reviews_paginated,
                            pagination=pagination)
 
+
+# Display profile function
 
 @app.route("/get_profile/<username>", methods=["GET", "POST"])
 def get_profile(username):
@@ -200,6 +213,8 @@ def get_profile(username):
                            pagination=pagination)
 
 
+# Display reivews function
+
 @app.route("/get_reviews")
 def get_reviews():
     reviews = mongo.db.reviews.find()
@@ -209,6 +224,8 @@ def get_reviews():
                            reviews=reviews_paginated,
                            pagination=pagination)
 
+
+# Manage reviews function
 
 @app.route("/manage_reviews")
 def manage_reviews():
