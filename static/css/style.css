@@ -89,7 +89,6 @@ footer {
 }
 
 /* Register */
-
 h1 {
     font-family: 'Kiwi Maru', serif;
     font-size: 40px;
@@ -232,9 +231,11 @@ html, body {
   @media screen and (max-width: 600px) {
       nav {
         position: fixed;
+        z-index: 5;
       }
 
       main {
           padding-top: 55px;
       }
+
   }

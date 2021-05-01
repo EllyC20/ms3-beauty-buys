@@ -245,6 +245,9 @@ While testing the Home page I expect the following things to occur;
 * The navigation bar should collapse to a mobile side navbar at any screen size below 993 px. 
     - This was tested using Google Chrome Dev Tools, an Iphone 8 and an Ipad Pro. These checks confirmed the expected behaviour. 
 
+* The navigation bar should become fixed on smaller device sizes, specifically below 600px. 
+    - To test this I used Google Chrome Dev Tools, and an Iphone 8. These checks on the Iphone showed an error that wasn't clear within Dev tools. While scrolling on the "Reviews" and "Profile" page, the nav disappeared behind the content. To fix this I altered the z-index of the navigation bar.
+
 * The carousel should on touch screen devices be "finger scrollable". On desktop or devices without a touch screen function the user can click the image to scroll.
     - This was tested on a Macbook Air, an Ipad Pro and an Iphone 8. These checks confirmed the expected behaviour. 
 
