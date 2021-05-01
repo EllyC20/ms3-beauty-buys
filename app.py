@@ -217,7 +217,11 @@ def manage_reviews():
         return render_template("404.html")
 
     reviews = mongo.db.reviews.find()
-    return render_template("manage_reviews.html", reviews=reviews)
+    reviews_paginated = paginated(reviews)
+    pagination = pagination_args(reviews)
+    return render_template("manage_reviews.html",
+                           reviews=reviews_paginated,
+                           pagination=pagination)
 
 
 if __name__ == "__main__":
