@@ -47,7 +47,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-question prefix"></i>
                     <input id="review_detail" name="review_detail" class="validate" type="text" minlength="10" maxlength="500"
-                        value="{{- review.review_detail -}}" pattern="[a-zA-Z0-9.,!]+[a-zA-Z0-9!., ]+" required>
+                        value="{{- review.review_detail -}}" pattern="[a-zA-Z0-9.,!']+[a-zA-Z0-9!.,' ]+" required>
                     <label for="review_detail">Review Detail</label>
                     <p class="helper-text">What you love about this product, or what you don't!</p>
                     <span class="helper-text" data-error="Please use letters,numbers or common punctuation only." data-success="Accepted"></span>
